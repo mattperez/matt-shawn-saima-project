@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Header</title>
+    <title>Header</title>
 	
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE. DO NOT PUT THEM INSIDE THE build:css comments -->
 	<!-- Put Google Fonts Here -->
@@ -15,24 +14,72 @@
     <!-- <script src="./scripts/jquery.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
     <script src="./scripts/popper.js"></script> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 	<!-- endbuild -->
 </head>
 <body>
-    <div class="logoWithDescription">
-        <div>
-            <a href="./welcomePage.html"><img src="../images/bcit.JPG" alt="Bcit Image"></a>
+    <header>
+        <div class="logoWithDescription">
+            <div class="image">
+                <a href="./welcomePage.html"><img src="../images/bcit.JPG" alt="Bcit Image" width="80%" height="73px"></a>
+            </div>
+            <div class="programName">
+                <h5>SCHOOL OF COMPUTING AND ACADEMIC STUDIES</h5>
+                <h3>Software System Developer</h3>
+                <h4>Web Programmer Option</h4>
+            </div>
         </div>
-        <div class="programName">
-            <h5>SCHOOL OF COMPUTING AND ACADEMIC STUDIES</h5>
-            <h3>Software System Developer</h3>
-            <h4>Web Programmer Option</h4>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-md justify-content-md-center justify-content-start navbar-custom p-0">
+
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <!-- <ul class="listElements">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./course-summary-page.html">COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./schedule-page.html">SCHEDULE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./students-page.html">STUDENTS</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link" href="./overview-page.html">OVERVIEW</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="./staff-page.html">STAFF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./resources-page.html">E-RESOURCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-page.html">CONTACT</a>
+                    </li> 
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </ul> -->
+                <!-- <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter"></i></a> </li>
+                </ul> -->
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a class="#contact" href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav> 
+        
+    </header>
+
+    
+    <!-- <nav class="navbar navbar-expand-md justify-content-md-center justify-content-start navbar-custom p-0">
         <a class="navbar-brand d-md-none d-inline" href="./welcomePage.html">SSD-Web Programmer Option</a>
         <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
             <span class="navbar-toggler-icon"></span>
@@ -66,7 +113,7 @@
                 <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter"></i></a> </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
             
 <!-- *** IMPORTANT *** If you want to add additional JavaScript scripts to your project, then make sure to 
 place the script tags between the build:js comment tags -->
@@ -75,5 +122,15 @@ place the script tags between the build:js comment tags -->
 <!-- <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/script.js"></script> -->
 <!-- endbuild -->	
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
