@@ -1,0 +1,42 @@
+.table .thead-dark tr th{
+    background-color:  rgb(6, 6, 105);
+}
+
+.listView{
+    //display: none;
+}
+.calendarView{
+    display: none;
+}
+
+.calendarFlexContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    //background-color: DodgerBlue;
+}
+
+.calendarFlexContainer div{
+    background-color: #f1f1f1;
+    //align-items: center;
+    width: 15%;
+    height: 10em;
+    margin: 10px;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+.weekdays div{
+    width: 15%;
+    height: 2em;
+    margin: 10px;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    border: solid black thin
+}
+h1{
+    background-color:rgb(6, 6, 105);
+    color: white;
+}
+
