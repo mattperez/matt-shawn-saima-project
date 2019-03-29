@@ -1,0 +1,53 @@
+// Gallery Styles
+h2{
+    text-align: center;
+    font-size: $header-font-size;
+}
+
+.gallery-grid{
+    
+    padding: 5px 80px 15px 80px;
+    @include flex-layout-row;
+
+    .item{
+        border: 2px solid white;   
+    }
+    
+    .item-01,
+    .item-02{
+        width: 25%;
+        
+    }
+    .item-03{
+        width: 50%;
+       
+    }
+    .item-04{
+        width:50%;
+        
+    }
+    .item-05,
+    .item-06{
+        width: 25%;
+        
+    }
+
+}
+
+@media (max-width: $phone-wide){
+    .gallery-grid{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        margin-bottom: 8%;
+        .item-01,
+        .item-02,
+        .item-03,
+        .item-04,
+        .item-05,
+        .item-06{
+            width: 100%;
+        }
+    }
+}

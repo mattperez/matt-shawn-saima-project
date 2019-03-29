@@ -1,0 +1,65 @@
+// Footer Styles
+footer {
+    background-color: $bg-footer-color;
+    height: 100%;
+    .footer-nav{
+        $border: 1px solid white;
+        border-top: $border;
+        margin: 0 auto;
+        width: 50%;
+        padding:$padding;
+    
+        ul{
+            list-style: none;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            margin: 0px auto;          
+        }
+
+        li{
+            font-size: 12px;
+        }
+    
+        a {
+            display: block;
+            color: $text-color-dark;
+            border-right: $border;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            padding: 0px 30px;
+            
+            #{$link-hover-selector} {
+                background-color: rgba(white, 0.3);
+            }
+        }
+
+        @include mq($phone-wide) {
+            margin: 0 ;
+            ul{
+                flex: 1;
+                flex-direction: row;
+            }
+            a {
+                display: block;
+                padding: 0px 5px;
+        
+            }
+    
+        }
+
+        @include mq($tablet-landscape-medium) {
+
+            a {
+                display: block;
+                padding: 0px 5px;
+        
+            }
+    
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
