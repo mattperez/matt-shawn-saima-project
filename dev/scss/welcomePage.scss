@@ -1,6 +1,6 @@
 .welcomePage-image > img{
     filter: blur(2px);
-    height: 700px; 
+    height: 650px; 
     width: 100%;
     z-index: 0;
 }
@@ -13,7 +13,7 @@
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
