@@ -1,15 +1,21 @@
 // Insert JavaScript here...
 function toggleListView(){
-    var element = document.getElementById("listView");
-  //element.classList.toggle("listView");
-  if(element.style.display=="none"){
-        element.style.display="";
-  }else element.style.display="none";
+    var list = document.getElementById("listView");
+    var btn= document.getElementById("scheduleButton");
+    btn.innerText="hello shawn";
+
+  if(list.style.display=="none"){
+        list.style.display="";
+        btn.innerText="Calendar View";
+  }else {
+      list.style.display="none";
+      btn.innerText="List View";
+  }
   
   toggleCalendarView();
 }
 
 function toggleCalendarView(){
-    var element = document.getElementById("calendarView");
-  element.classList.toggle("calendarView");
+    var calView = document.getElementById("calendarView");
+  calView.classList.toggle("calendarView");
 }
