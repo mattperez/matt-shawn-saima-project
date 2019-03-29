@@ -1,14 +1,6 @@
-#navbarContent{
-    position: absolute;
-    text-align: left;
-    top: 0%;
-    z-index: 4;
-    width: 100%;
-    font-size: 20px;
-}
-
-#scheduleButton{
-    margin-top:10%;
+.scheduleWrapper{
+    background-color: rgb(255, 254, 254);
+    margin: 0 5%;
 }
 
 .table .thead-dark tr th{
@@ -23,12 +15,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    //background-color: DodgerBlue;
 }
 
 .calendarFlexContainer div{
     background-color: #f1f1f1;
-    //align-items: center;
     width: 15%;
     height: 10em;
     margin: 10px;
