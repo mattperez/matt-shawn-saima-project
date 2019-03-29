@@ -1,4 +1,4 @@
-// Insert JavaScript here...
+// schedule view functions
 function toggleListView(){
     var list = document.getElementById("listView");
     var btn= document.getElementById("scheduleButton");
@@ -19,3 +19,6 @@ function toggleCalendarView(){
     var calView = document.getElementById("calendarView");
   calView.classList.toggle("calendarView");
 }
+///////////////////////////////////////////////////////////////
+
+  
