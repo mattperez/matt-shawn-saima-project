@@ -6,128 +6,205 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Student Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/studentsPage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
+  <!-- <script>
     $(function(){
         var filename = "./header.html"
         $("#navbarContent").load(filename);
     });
-  </script>
+  </script> -->
 </head>
 <body>
+
+  <div class="logoWithDescription">
+        <div>
+            <a href="./welcomePage.html"><img src="../images/bcit.JPG" alt="Bcit Image"></a>
+        </div>
+        <div class="programName">
+            <h5>SCHOOL OF COMPUTING AND ACADEMIC STUDIES</h5>
+            <h3>Software System Developer</h3>
+            <h4>Web Programmer Option</h4>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md justify-content-md-center justify-content-start navbar-custom p-0">
+        <a class="navbar-brand d-md-none d-inline" href="./welcomePage.html">SSD-Web Programmer Option</a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="./course-summary-page.html">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./schedule-page.html">SCHEDULE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./students-page.html">STUDENTS</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="./overview-page.html">OVERVIEW</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="./staff-page.html">STAFF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resources-page.html">E-RESOURCES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact-page.html">CONTACT</a>
+                </li> 
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
     <div id="navbarContent"></div>
-    <table>
+    <table class="table table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>My BCIT Email</th>
+          <th>Github</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Saima</td>
+          <td>Chaity</td>
+          <td>schaity402@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Mattias</td>
+          <td>Perez</td>
+          <td>mperez007@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Shawn</td>
+          <td>Richardson</td>
+          <td>gsr@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Alison</td>
+          <td>Accardo</td>
+          <td>aaccardo802@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Lai</td>
+          <td>Aigner</td>
+          <td>laigner578@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Monet</td>
+          <td>Barrette</td>
+          <td>mbarrette802@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Marissa</td>
+          <td>Barrow</td>
+          <td>mbarrow208@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
       <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>My BCIT Email</th>
-      </tr>
+          <td>Michael</td>
+          <td>Burriss</td>
+          <td>mburriss817@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Clare</td>
+          <td>Chou</td>
+          <td>cchou502@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Jacalyn</td>
+          <td>Christian</td>
+          <td>jchristian175@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Taren</td>
+          <td>Crowther</td>
+          <td>tcrowther216@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Walter</td>
+          <td>Heisenberg</td>
+          <td>wheisenberg@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
       <tr>
-        <td>Saima</td>
-        <td>Chaity</td>
-        <td>schaity402@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Mattias</td>
-        <td>Perez</td>
-        <td>mperez007@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Shawn</td>
-        <td>Richardson</td>
-        <td>gsr@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Alison</td>
-        <td>Accardo</td>
-        <td>aaccardo802@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Lai</td>
-        <td>Aigner</td>
-        <td>laigner578@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Monet</td>
-        <td>Barrette</td>
-        <td>mbarrette802@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Marissa</td>
-        <td>Barrow</td>
-        <td>mbarrow208@my.bcit.ca</td>
-      </tr>
-    <tr>
-        <td>Michael</td>
-        <td>Burriss</td>
-        <td>mburriss817@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Clare</td>
-        <td>Chou</td>
-        <td>cchou502@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Jacalyn</td>
-        <td>Christian</td>
-        <td>jchristian175@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Taren</td>
-        <td>Crowther</td>
-        <td>tcrowther216@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Walter</td>
-        <td>Heisenberg</td>
-        <td>wheisenberg@my.bcit.ca</td>
-      </tr>
-    <tr>
-        <td>Shira</td>
-        <td>Hyche</td>
-        <td>shyche702@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Flossie</td>
-        <td>Iser</td>
-        <td>fiser123@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Karpinder</td>
-        <td>Kaur</td>
-        <td>kkaur372@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Kayla</td>
-        <td>Kim</td>
-        <td>akim802@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Margot</td>
-        <td>Lawyer</td>
-        <td>mlawyer203@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Jessica</td>
-        <td>Lee</td>
-        <td>jlee785@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Phyliss</td>
-        <td>Mcswain</td>
-        <td>pmcwain@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Alonso</td>
-        <td>Olberding</td>
-        <td>Olberding@my.bcit.ca</td>
-      </tr>
-      <tr>
-        <td>Trisha</td>
-        <td>Park</td>
-        <td>tpark302@my.bcit.ca</td>
-      </tr>
+          <td>Shira</td>
+          <td>Hyche</td>
+          <td>shyche702@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Flossie</td>
+          <td>Iser</td>
+          <td>fiser123@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Karpinder</td>
+          <td>Kaur</td>
+          <td>kkaur372@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Kayla</td>
+          <td>Kim</td>
+          <td>akim802@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Margot</td>
+          <td>Lawyer</td>
+          <td>mlawyer203@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Jessica</td>
+          <td>Lee</td>
+          <td>jlee785@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Phyliss</td>
+          <td>Mcswain</td>
+          <td>pmcwain@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Alonso</td>
+          <td>Olberding</td>
+          <td>Olberding@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+        <tr>
+          <td>Trisha</td>
+          <td>Park</td>
+          <td>tpark302@my.bcit.ca</td>
+          <td><img src="../images/github.png" style="max-height:2em; max-width:2em"></td>
+        </tr>
+      </tbody>  
     </table>
 </body>
 </html>

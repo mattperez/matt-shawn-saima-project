@@ -5,47 +5,220 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/staffPage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
+  
+  <!-- <script>
       $(function(){
           var filename = "./header.html"
           $("#navbarContent").load(filename);
       });
-  </script>
+  </script> -->
   
     <title>staff-page</title>
 </head>
   <body>
+
+    <div class="logoWithDescription">
+        <div>
+            <a href="./welcomePage.html"><img src="../images/bcit.JPG" alt="Bcit Image"></a>
+        </div>
+        <div class="programName">
+            <h5>SCHOOL OF COMPUTING AND ACADEMIC STUDIES</h5>
+            <h3>Software System Developer</h3>
+            <h4>Web Programmer Option</h4>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md justify-content-md-center justify-content-start navbar-custom p-0">
+        <a class="navbar-brand d-md-none d-inline" href="./welcomePage.html">SSD-Web Programmer Option</a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="./course-summary-page.html">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./schedule-page.html">SCHEDULE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./students-page.html">STUDENTS</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="./overview-page.html">OVERVIEW</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="./staff-page.html">STAFF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resources-page.html">E-RESOURCES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact-page.html">CONTACT</a>
+                </li> 
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-facebook mr-1"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
     <div id="navbarContent"></div>
     <section>
       <h1>FACULTY</h1>
-      <div>
-        <h3>Pat McGee</h3>
-        <h3>SSD Program Lead</h3>
-        <h5>C#, SQL, Angular, ASP.NET, Web Security, iOS</h5>
-        <h5><em>Pat_McGee@bcit.ca</em></h5>
+      <div class="row">
+        <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Pat McGee</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">SSD Program Lead</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">React, Angular, ASP.NET, Web Security, iOS</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Pat_McGee@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
+
+         <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Phil Weier</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Lead Instructor</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">C#, SQL, ASP.Net, </li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Phil_Weier@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
+
+         <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Jason Harrison</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Instructor</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Javascript, JQuery</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Jason_Harris@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
       </div>
-      <div>
-        <h3>Pat McGee</h3>
-        <h3>SSD Program Lead</h3>
-        <h5>C#, SQL, Angular, ASP.NET, Web Security, iOS</h5>
-        <h5><em>Pat_McGee@bcit.ca</em></h5>
+      <div class="row">
+         <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Michael Whyte</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Instructor</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">HTML, CSS, SASS, Javascript</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Michael_Whyte@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
+
+        <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Paul Mills</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Instructor</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Java, Android </li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Paul_Mills@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
+
+         <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Jeff Parker</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Instructor</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">PHP, MySQL</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Jason_Harris@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
       </div>
+
+      <div class="row">
+         <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Medhat Elmasry</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Instructor</h4>
+                  <h5 class="card-text">Technolgies</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Node, Express, MongoDB, Angular</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Medhat_Elmasry@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>
+        <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Marlene Delanghe</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">Instructor</h4>
+                  <h5 class="card-text">Subjects</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Presentation skill, Resume Writing, Team Building</li>
+                  </ul>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Marlene_Delanghe@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>  
+
+      </div> 
     </section>
     <section>
-      <h1>ADMINSTRATION</h1>
-      <div>
-        <h3>Pat McGee</h3>
-        <h3>SSD Program Lead</h3>
-        <h5>C#, SQL, Angular, ASP.NET, Web Security, iOS</h5>
-        <h5><em>Pat_McGee@bcit.ca</em></h5>
-      </div>
-      <div>
-        <h3>Pat McGee</h3>
-        <h3>SSD Program Lead</h3>
-        <h5>C#, SQL, Angular, ASP.NET, Web Security, iOS</h5>
-        <h5><em>Pat_McGee@bcit.ca</em></h5>
+      <h1>ADMINISTRATION</h1>
+     <div class="row">
+        <div class="col-lg-3 col-md-12 mb-4">
+          <div class="card">
+              <h1 class="card-header">Yoonie Cho</h1>                
+              <div class="card-body">
+                  <h4 class="card-title text-center">SSD Program Coordinator</h4>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#">Yoonie_Cho@bcit.ca</a>
+              </div>   
+          </div>        
+        </div>                 
       </div>
     </section>
   </body>
