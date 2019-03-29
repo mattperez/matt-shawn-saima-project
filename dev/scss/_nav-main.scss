@@ -1,0 +1,167 @@
+// Main Nav Styles
+// Main Navigation Styles
+header{
+    nav {
+           $border: 1px solid white;
+           width: 100%;
+           background: #f7470e;
+           height: 35px;
+        
+        .topnav{
+        @include flatten;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            .icon{
+                visibility: hidden;
+                display: none;
+            }
+        }
+
+        a {
+            display: block;
+            color:#2e5ec0;
+            text-align: center;
+            font-size: 1.2em;
+            text-decoration: none;
+            outline: none;
+            padding: 7px 20px;
+            font-weight: bold;
+
+            #{$link-hover-selector} {
+                border-bottom: 3px solid #e9eb2e;
+            }
+    
+            @at-root nav li:last-child a {
+                border-right: none;
+            }
+        }    
+
+
+        
+    
+        // height: $height;
+        // border-top: $border;
+    
+        // ul {
+        //     @include flatten;
+        //     list-style: none;
+        //     display: flex;
+        // }
+    
+        // a {
+        //     display: block;
+        //     color: $text-color-dark;
+        //     border-right: $border;
+        //     line-height: $height;
+        //     text-align: center;
+        //     font-size: 1.2em;
+        //     text-decoration: none;
+        //     outline: none;
+        //     padding: $padding;
+            
+        //     #{$link-hover-selector} {
+        //         border-bottom: 10px solid plum;
+        //     }
+    
+        //     @at-root nav li:last-child a {
+        //         border-right: none;
+        //     }
+    
+        // }
+
+        // @include mq($tablet-landscape) {
+        //     // height: auto;
+        //     // border-top: none;
+            
+        //     // a {
+        //     //     line-height: 50px;
+        //     //     border-right: none;
+        //     //     border-top: $border;
+        //     //     font-size: 1em;
+        //     //     padding: rem(20);
+        //     //     padding-bottom: 0px;
+
+        //     //     #{$link-hover-selector} {
+        //     //         border-bottom: 30px solid plum;
+        //     //     }
+        //     // }
+
+        //     // #myTopnav {
+        //     //     margin-top: 25%; }
+
+        //     // nav{
+
+        //     // }
+
+        //     .topnav > .icon {
+        //         float: right;
+        //         visibility: visible;
+        //         display: block;
+        //         right: 0;
+        //     }  
+
+        //     .topnav a:not(:first-child){
+        //         display: none;
+        //         float: left;
+        //     }
+
+        //     .topnav.responsive {position: relative;}
+        //     .topnav.responsive .icon {
+        //       position: absolute;
+        //       right: 0;
+        //       top: 0;
+        //     }
+        //     .topnav.responsive a {
+        //       float: none;
+        //       display: block;
+        //       visibility: visible;
+        //       text-align: left;
+        //     }
+    
+        // }
+
+        @media screen and (max-width: 1024px) {
+
+            
+            .topnav a {display: none;}
+            .topnav a.icon {
+              float: right;
+              margin-right: 0;
+              display: block;
+              visibility: visible;
+            }
+
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+
+            .topnav{
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .icon{
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+            }
+
+            .topnav.responsive a:not(:last-child) {              
+              visibility: visible;
+              display: block;
+              justify-content: flex-start;
+              background: #f7470e;
+              width: 100%;
+              margin: 0;
+            }
+          }
+    
+    }
+}
+
