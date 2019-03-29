@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="../styles/studentsPage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-    $(function(){
-        var filename = "./header.html"
-        $("#navbarContent").load(filename);
-    });
+  <script defer="defer">
+      $(function(){
+          var filename = "./header.html"
+          $("#navbarContent").load(filename);
+      });
   </script>
 </head>
 <body>
-    <div id="navbarContent"></div>
+  <div id="navbarContent"></div>
+  <div class="studentWrapper">
     <table class="table table-striped table-hover">
       <thead class="thead-dark">
         <tr>
@@ -156,5 +157,6 @@
         </tr>
       </tbody>  
     </table>
+    </div>
 </body>
 </html>
