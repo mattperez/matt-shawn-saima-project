@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Schedule Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/schedulePage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../scripts/script.js"></script>
   <script>
       $(function(){
           var filename = "./header.html"
@@ -19,7 +21,13 @@
   <body>
     <div id="navbarContent"></div>
 
-    <table class="table table-striped">
+    <div>
+      <button type="button" class="btn btn-primary" onclick="toggleListView()">List / Calendar View</button>
+    </div></br>
+
+
+
+    <table class="table table-striped listView" id="listView">
       <thead class="thead-dark">
         <tr><th>Day</th><th>Date</th><th>Course</th><th>Instructor</th></tr>
       </thead>
@@ -76,42 +84,42 @@
         <tr><td>	Friday	</td><td>	November 16, 2018	</td><td>	ASP.NET – MVC	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Monday	</td><td>	November 19, 2018	</td><td>	ASP.NET – MVC	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Tuesday	</td><td>	November 20, 2018	</td><td>	Angular & React.js	</td><td>	Pat McGee	</td></tr>
-        <tr><td>	Wednesday	</td><td>	November 21, 2018	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	November 21, 2018	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	November 22, 2018	</td><td>	Front End Web Design/Scripting/Tooling	</td><td>	Michael Whyte	</td></tr>
         <tr><td>	Friday	</td><td>	November 23, 2018	</td><td>	Angular & React.js	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Monday	</td><td>	November 26, 2018	</td><td>	ASP.NET – MVC	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Tuesday	</td><td>	November 27, 2018	</td><td>	Angular & React.js	</td><td>	Pat McGee	</td></tr>
-        <tr><td>	Wednesday	</td><td>	November 28, 2018	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	November 28, 2018	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	November 29, 2018	</td><td>	ASP.NET – MVC	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Friday	</td><td>	November 30, 2018	</td><td>	Angular & React.js	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Monday	</td><td>	December 3, 2018	</td><td>	Front End Web Design/Scripting/Tooling	</td><td>	Michael Whyte	</td></tr>
         <tr><td>	Tuesday	</td><td>	December 4, 2018	</td><td>	Angular & React.js	</td><td>	Pat McGee	</td></tr>
-        <tr><td>	Wednesday	</td><td>	December 5, 2018	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	December 5, 2018	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	December 6, 2018	</td><td>	Project 1 - Phase 1	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Friday	</td><td>	December 7, 2018	</td><td>	Front End Web Design/Scripting/Tooling	</td><td>	Michael Whyte	</td></tr>
         <tr><td>	Monday	</td><td>	December 10, 2018	</td><td>	Project 1 - Phase 1	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Tuesday	</td><td>	December 11, 2018	</td><td>	Project 1 - Phase 1	</td><td>	Phil Weier	</td></tr>
-        <tr><td>	Wednesday	</td><td>	December 12, 2018	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	December 12, 2018	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	December 13, 2018	</td><td>	Project 1 - Phase 1	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Friday	</td><td>	December 14, 2018	</td><td>	Flex day (no class is currently scheduled but this could change).	</td><td>		</td></tr>
         <tr><td>	Monday	</td><td>	January 7, 2019	</td><td>	ASP.NET – Web API	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Tuesday	</td><td>	January 8, 2019	</td><td>	OO PHP & Laravel	</td><td>	Jeff Parker	</td></tr>
-        <tr><td>	Wednesday	</td><td>	January 9, 2019	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	January 9, 2019	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	January 10, 2019	</td><td>	ASP.NET – Web API	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Friday	</td><td>	January 11, 2019	</td><td>	ASP.NET – MVC	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Monday	</td><td>	January 14, 2019	</td><td>	ASP.NET – Web API	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Tuesday	</td><td>	January 15, 2019	</td><td>	Front End Web Design/Scripting/Tooling	</td><td>	Michael Whyte	</td></tr>
-        <tr><td>	Wednesday	</td><td>	January 16, 2019	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	January 16, 2019	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	January 17, 2019	</td><td>	OO PHP & Laravel	</td><td>	Jeff Parker	</td></tr>
         <tr><td>	Friday	</td><td>	January 18, 2019	</td><td>	ASP.NET – MVC	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Monday	</td><td>	January 21, 2019	</td><td>	Front End Web Design/Scripting/Tooling	</td><td>	Michael Whyte	</td></tr>
         <tr><td>	Tuesday	</td><td>	January 22, 2019	</td><td>	OO PHP & Laravel	</td><td>	Jeff Parker	</td></tr>
-        <tr><td>	Wednesday	</td><td>	January 23, 2019	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	January 23, 2019	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	January 24, 2019	</td><td>	ASP.NET – Web API	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Friday	</td><td>	January 25, 2019	</td><td>	Project 1 - Phase 2	</td><td>	Phil Weier	</td></tr>
         <tr><td>	Monday	</td><td>	January 28, 2019	</td><td>	ASP.NET – Web API	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Tuesday	</td><td>	January 29, 2019	</td><td>	OO PHP & Laravel	</td><td>	Jeff Parker	</td></tr>
-        <tr><td>	Wednesday	</td><td>	January 30, 2019	</td><td>	MEAN (Mongo/ExpressJS/Angular/Node)	</td><td>	Medhat Elmasry	</td></tr>
+        <tr><td>	Wednesday	</td><td>	January 30, 2019	</td><td>	MEAN Stack	</td><td>	Medhat Elmasry	</td></tr>
         <tr><td>	Thursday	</td><td>	January 31, 2019	</td><td>	Web Application Security	</td><td>	Pat McGee	</td></tr>
         <tr><td>	Friday	</td><td>	February 1, 2019	</td><td>	Flex day (no class is currently scheduled but this could change).	</td><td>		</td></tr>
         <tr><td>	Monday	</td><td>	February 4, 2019	</td><td>	Front End Web Design/Scripting/Tooling	</td><td>	Michael Whyte	</td></tr>
@@ -170,148 +178,245 @@
     </table>
 
 
-    <!-- <div style="display:flex; flex-direction:column">    
-      <div style="border:solid">	10-Sep-18	<br/>	Orientation / Study Skills	<br/>		</div>
-<div style="border:solid">	11-Sep-18	<br/>	Team Building / C# Intro	<br/>		</div>
-<div style="border:solid">	12-Sep-18	<br/>	OO Programming in C# 	<br/>	Phil Weier	</div>
-<div style="border:solid">	13-Sep-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	14-Sep-18	<br/>	Relational Databases	<br/>	Phil Weier	</div>
-<div style="border:solid">	17-Sep-18	<br/>	JavaScript (Class starts at 10 today only)	<br/>	Jason Harrison	</div>
-<div style="border:solid">	18-Sep-18	<br/>	OO Programming in C#	<br/>	Phil Weier	</div>
-<div style="border:solid">	19-Sep-18	<br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
-<div style="border:solid">	20-Sep-18	<br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
-<div style="border:solid">	21-Sep-18	<br/>	Relational Databases	<br/>	Phil Weier	</div>
-<div style="border:solid">	24-Sep-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	25-Sep-18	<br/>	JavaScript	<br/>	Jason Harrison	</div>
-<div style="border:solid">	26-Sep-18	<br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
-<div style="border:solid">	27-Sep-18	<br/>	Relational Databases	<br/>	Phil Weier	</div>
-<div style="border:solid">	28-Sep-18	<br/>	OO Programming in C#	<br/>	Phil Weier	</div>
-<div style="border:solid">	01-Oct-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	02-Oct-18	<br/>	JavaScript	<br/>	Jason Harrison	</div>
-<div style="border:solid">	03-Oct-18	<br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
-<div style="border:solid">	04-Oct-18	<br/>	Presentation Skills	<br/>	Marlene Delanghe	</div>
-<div style="border:solid">	05-Oct-18	<br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
-<div style="border:solid">	08-Oct-18	<br/>	Thanksgiving Day	<br/>		</div>
-<div style="border:solid">	09-Oct-18	<br/>	OO Programming in C#	<br/>	Phil Weier	</div>
-<div style="border:solid">	10-Oct-18	<br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
-<div style="border:solid">	11-Oct-18	<br/>	Relational Databases	<br/>	Phil Weier	</div>
-<div style="border:solid">	12-Oct-18	<br/>	OO Programming in C#	<br/>	Phil Weier	</div>
-<div style="border:solid">	15-Oct-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	16-Oct-18	<br/>	JavaScript	<br/>	Jason Harrison	</div>
-<div style="border:solid">	17-Oct-18	<br/>	Relational Databases	<br/>	Phil Weier	</div>
-<div style="border:solid">	18-Oct-18	<br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
-<div style="border:solid">	19-Oct-18	<br/>	OO Programming in C# 	<br/>	Phil Weier	</div>
-<div style="border:solid">	22-Oct-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	23-Oct-18	<br/>	JavaScript	<br/>	Jason Harrison	</div>
-<div style="border:solid">	24-Oct-18	<br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
-<div style="border:solid">	25-Oct-18	<br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
-<div style="border:solid">	26-Oct-18	<br/>	Flex day (no class is currently scheduled but this could change).	<br/>		</div>
-<div style="border:solid">	29-Oct-18	<br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
-<div style="border:solid">	30-Oct-18	<br/>	JavaScript	<br/>	Jason Harrison	</div>
-<div style="border:solid">	31-Oct-18	<br/>	Relational Databases	<br/>	Phil Weier	</div>
-<div style="border:solid">	01-Nov-18	<br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
-<div style="border:solid">	02-Nov-18	<br/>	OO Programming in C#	<br/>	Phil Weier	</div>
-<div style="border:solid">	05-Nov-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	06-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	07-Nov-18	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	08-Nov-18	<br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
-<div style="border:solid">	09-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	12-Nov-18	<br/>	Remembrance Day - BCIT Closed	<br/>		</div>
-<div style="border:solid">	13-Nov-18	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	14-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	15-Nov-18	<br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
-<div style="border:solid">	16-Nov-18	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	19-Nov-18	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	20-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	21-Nov-18	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	22-Nov-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	23-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	26-Nov-18	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	27-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	28-Nov-18	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	29-Nov-18	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	30-Nov-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	03-Dec-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	04-Dec-18	<br/>	Angular & React.js	<br/>	Pat McGee	</div>
-<div style="border:solid">	05-Dec-18	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	06-Dec-18	<br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
-<div style="border:solid">	07-Dec-18	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	10-Dec-18	<br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
-<div style="border:solid">	11-Dec-18	<br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
-<div style="border:solid">	12-Dec-18	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	13-Dec-18	<br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
-<div style="border:solid">	14-Dec-18	<br/>	Flex day (no class is currently scheduled but this could change).	<br/>		</div>
-<div style="border:solid">	07-Jan-19	<br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
-<div style="border:solid">	08-Jan-19	<br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
-<div style="border:solid">	09-Jan-19	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	10-Jan-19	<br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
-<div style="border:solid">	11-Jan-19	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	14-Jan-19	<br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
-<div style="border:solid">	15-Jan-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	16-Jan-19	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	17-Jan-19	<br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
-<div style="border:solid">	18-Jan-19	<br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
-<div style="border:solid">	21-Jan-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	22-Jan-19	<br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
-<div style="border:solid">	23-Jan-19	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	24-Jan-19	<br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
-<div style="border:solid">	25-Jan-19	<br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div>
-<div style="border:solid">	28-Jan-19	<br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
-<div style="border:solid">	29-Jan-19	<br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
-<div style="border:solid">	30-Jan-19	<br/>	MEAN (Mongo/ExpressJS/Angular/Node)	<br/>	Medhat Elmasry	</div>
-<div style="border:solid">	31-Jan-19	<br/>	Web Application Security	<br/>	Pat McGee	</div>
-<div style="border:solid">	01-Feb-19	<br/>	Flex day (no class is currently scheduled but this could change).	<br/>		</div>
-<div style="border:solid">	04-Feb-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	05-Feb-19	<br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div>
-<div style="border:solid">	06-Feb-19	<br/>	OO PHP & Laravel	<br/>	Pat McGee	</div>
-<div style="border:solid">	07-Feb-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	08-Feb-19	<br/>	OO PHP & Laravel	<br/>	Pat McGee	</div>
-<div style="border:solid">	11-Feb-19	<br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div>
-<div style="border:solid">	12-Feb-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	13-Feb-19	<br/>	OO PHP & Laravel	<br/>	Pat McGee	</div>
-<div style="border:solid">	14-Feb-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	15-Feb-19	<br/>	OO PHP & Laravel	<br/>	Pat McGee	</div>
-<div style="border:solid">	18-Feb-19	<br/>	Family Day	<br/>		</div>
-<div style="border:solid">	19-Feb-19	<br/>	Web Application Security	<br/>	Pat McGee	</div>
-<div style="border:solid">	20-Feb-19	<br/>	Web Application Security	<br/>	Pat McGee	</div>
-<div style="border:solid">	21-Feb-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	22-Feb-19	<br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div>
-<div style="border:solid">	25-Feb-19	<br/>	Web Application Security	<br/>	Pat McGee	</div>
-<div style="border:solid">	26-Feb-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	27-Feb-19	<br/>	Web Application Security	<br/>	Pat McGee	</div>
-<div style="border:solid">	28-Feb-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	01-Mar-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	04-Mar-19	<br/>	AWS Intro	<br/>	Pat McGee	</div>
-<div style="border:solid">	05-Mar-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	06-Mar-19	<br/>	AWS Intro	<br/>	Pat McGee	</div>
-<div style="border:solid">	07-Mar-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	08-Mar-19	<br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
-<div style="border:solid">	11-Mar-19	<br/>	AWS Intro	<br/>	Pat McGee	</div>
-<div style="border:solid">	12-Mar-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	13-Mar-19	<br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
-<div style="border:solid">	14-Mar-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	15-Mar-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	18-Mar-19	<br/>	March Break	<br/>		</div>
-<div style="border:solid">	19-Mar-19	<br/>	March Break	<br/>		</div>
-<div style="border:solid">	20-Mar-19	<br/>	March Break	<br/>		</div>
-<div style="border:solid">	21-Mar-19	<br/>	March Break	<br/>		</div>
-<div style="border:solid">	22-Mar-19	<br/>	March Break	<br/>		</div>
-<div style="border:solid">	25-Mar-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	26-Mar-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	27-Mar-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	28-Mar-19	<br/>	Resume Writing Essentials	<br/>	 Marlene Delanghe 	</div>
-<div style="border:solid">	29-Mar-19	<br/>	SNOW DAY MAKE-UP	<br/>	Michael Whyte	</div>
-<div style="border:solid">	01-Apr-19	<br/>	Flex day - Pat will be available in the lab for assistance if needed.	<br/>		</div>
-<div style="border:solid">	02-Apr-19	<br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
-<div style="border:solid">	03-Apr-19	<br/>	iOS Development	<br/>	Phil Weier	</div>
-<div style="border:solid">	04-Apr-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	05-Apr-19	<br/>	Interview Skills	<br/>	 Marlene Delanghe 	</div>
-<div style="border:solid">	08-Apr-19	<br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
-<div style="border:solid">	09-Apr-19	<br/>	Mock Interviews	<br/>	 Marlene Delanghe/Phil/Pat 	</div>
-<div style="border:solid">	10-Apr-19	<br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
-<div style="border:solid">	11-Apr-19	<br/>	Android Introduction	<br/>	Paul Mills	</div>
-<div style="border:solid">	12-Apr-19	<br/>	Flex day (no class is currently scheduled but this could change).	<br/>		</div>
-<div style="border:solid">	15-Apr-19	<br/>	Industry Project	<br/>	Phil Weier	</div>
-    </div> -->
+<!-- //////////////////////////////////////////////////////////////////// -->    
+<div class="calendarView" id="calendarView">
+  <div><h1>SEPTEMBER</h1></br><div class="calendarFlexContainer weekdays"><div class="weekdays">Monday</div><div class="weekdays">Tuesday</div><div class="weekdays">Wednesday</div><div class="weekdays">Thursday</div><div class="weekdays">Friday</div></div>          <div class="calendarFlexContainer">						
+<div><strong>	Monday, September 10, 18	</strong><br/>	Orientation / Study Skills	<br/>		</div>
+<div><strong>	Tuesday, September 11, 18	</strong><br/>	Team Building / C# Intro	<br/>		</div>
+<div><strong>	Wednesday, September 12, 18	</strong><br/>	OO Programming in C# 	<br/>	Phil Weier	</div>
+<div><strong>	Thursday, September 13, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Friday, September 14, 18	</strong><br/>	Relational Databases	<br/>	Phil Weier	</div></div>
+<div class="calendarFlexContainer" ><div><strong>	Monday, September 17, 18	</strong><br/>	JavaScript (Class starts at 10 today only)	<br/>	Jason Harrison	</div>
+<div><strong>	Tuesday, September 18, 18	</strong><br/>	OO Programming in C#	<br/>	Phil Weier	</div>
+<div><strong>	Wednesday, September 19, 18	</strong><br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
+<div><strong>	Thursday, September 20, 18	</strong><br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
+<div><strong>	Friday, September 21, 18	</strong><br/>	Relational Databases	<br/>	Phil Weier	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, September 24, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Tuesday, September 25, 18	</strong><br/>	JavaScript	<br/>	Jason Harrison	</div>
+<div><strong>	Wednesday, September 26, 18	</strong><br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
+<div><strong>	Thursday, September 27, 18	</strong><br/>	Relational Databases	<br/>	Phil Weier	</div>
+<div><strong>	Friday, September 28, 18	</strong><br/>	OO Programming in C#	<br/>	Phil Weier	</div></div>
+<div class="" ></br>
+
+<h1>OCTOBER</h1></br>
+<div class="calendarFlexContainer weekdays">
+  <div class="weekdays">Monday</div>
+  <div class="weekdays">Tuesday</div>
+  <div class="weekdays">Wednesday</div>
+  <div class="weekdays">Thursday</div>
+  <div class="weekdays">Friday</div>
+</div>
+
+<div class="calendarFlexContainer">				
+  <div><strong>	Monday, October 1, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+  <div><strong>	Tuesday, October 2, 18	</strong><br/>	JavaScript	<br/>	Jason Harrison	</div>
+  <div><strong>	Wednesday, October 3, 18	</strong><br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
+  <div><strong>	Thursday, October 4, 18	</strong><br/>	Presentation Skills	<br/>	Marlene Delanghe	</div>
+  <div><strong>	Friday, October 5, 18	</strong><br/>	Systems Analysis and Design	<br/>	Pat McGee	</div>
+</div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, October 8, 18	</strong><br/>	Thanksgiving Day	<br/>		</div>
+  <div><strong>	Tuesday, October 9, 18	</strong><br/>	OO Programming in C#	<br/>	Phil Weier	</div>
+  <div><strong>	Wednesday, October 10, 18	</strong><br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
+  <div><strong>	Thursday, October 11, 18	</strong><br/>	Relational Databases	<br/>	Phil Weier	</div>
+  <div><strong>	Friday, October 12, 18	</strong><br/>	OO Programming in C#	<br/>	Phil Weier	</div>
+</div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, October 15, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+  <div><strong>	Tuesday, October 16, 18	</strong><br/>	JavaScript	<br/>	Jason Harrison	</div>
+  <div><strong>	Wednesday, October 17, 18	</strong><br/>	Relational Databases	<br/>	Phil Weier	</div>
+  <div><strong>	Thursday, October 18, 18	</strong><br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
+  <div><strong>	Friday, October 19, 18	</strong><br/>	OO Programming in C# 	<br/>	Phil Weier	</div></div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, October 22, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+  <div><strong>	Tuesday, October 23, 18	</strong><br/>	JavaScript	<br/>	Jason Harrison	</div>
+  <div><strong>	Wednesday, October 24, 18	</strong><br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
+  <div><strong>	Thursday, October 25, 18	</strong><br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
+  <div><strong>	Friday, October 26, 18	</strong><br/>	Flex day (no class is currently scheduled but this could change).	<br/></div>
+</div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, October 29, 18	</strong><br/>	C# LINQ and Windows Forms	<br/>	Pat McGee	</div>
+  <div><strong>	Tuesday, October 30, 18	</strong><br/>	JavaScript	<br/>	Jason Harrison	</div>
+  <div><strong>	Wednesday, October 31, 18	</strong><br/>	Relational Databases	<br/>	Phil Weier	</div>
+  <div></div>
+  <div></div>
+  </div>
+
+<div class="" ></br>
+  <h1>NOVEMBER</h1></br>
+  <div class="calendarFlexContainer weekdays">
+    <div class="weekdays">Monday</div>
+    <div class="weekdays">Tuesday</div>
+    <div class="weekdays">Wednesday</div>
+    <div class="weekdays">Thursday</div>
+    <div class="weekdays">Friday</div></div>
+
+<div class="calendarFlexContainer">
+  <div></div>						
+  <div></div>
+  <div></div>
+  <div><strong>	Thursday, November 1, 18	</strong><br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
+  <div><strong>	Friday, November 2, 18	</strong><br/>	OO Programming in C#	<br/>	Phil Weier	</div></div>
+
+  <div class="calendarFlexContainer">
+    <div><strong>	Monday, November 5, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+    <div><strong>	Tuesday, November 6, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div>
+    <div><strong>	Wednesday, November 7, 18	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
+    <div><strong>	Thursday, November 8, 18	</strong><br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
+    <div><strong>	Friday, November 9, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div></div>
+
+<div class=" calendarFlexContainer" ><div><strong>	Monday, November 12, 18	</strong><br/>	Remembrance Day - BCIT Closed	<br/>		</div>
+<div><strong>	Tuesday, November 13, 18	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
+<div><strong>	Wednesday, November 14, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div>
+<div><strong>	Thursday, November 15, 18	</strong><br/>	Introductory Java Programming	<br/>	Paul Mills	</div>
+<div><strong>	Friday, November 16, 18	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, November 19, 18	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
+<div><strong>	Tuesday, November 20, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div>
+<div><strong>	Wednesday, November 21, 18	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+<div><strong>	Thursday, November 22, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Friday, November 23, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, November 26, 18	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
+<div><strong>	Tuesday, November 27, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div>
+<div><strong>	Wednesday, November 28, 18	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+<div><strong>	Thursday, November 29, 18	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div>
+<div><strong>	Friday, November 30, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div></div>
+
+<div class="" ></br>
+  <h1>DECEMBER</h1></br>
+  <div class="calendarFlexContainer weekdays">
+    <div class="weekdays">Monday</div><div class="weekdays">Tuesday</div><div class="weekdays">Wednesday</div><div class="weekdays">Thursday</div><div class="weekdays">Friday</div></div>
+    
+  <div class="calendarFlexContainer">						
+<div><strong>	Monday, December 3, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Tuesday, December 4, 18	</strong><br/>	Angular & React.js	<br/>	Pat McGee	</div>
+<div><strong>	Wednesday, December 5, 18	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+<div><strong>	Thursday, December 6, 18	</strong><br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
+<div><strong>	Friday, December 7, 18	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, December 10, 18	</strong><br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
+<div><strong>	Tuesday, December 11, 18	</strong><br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
+<div><strong>	Wednesday, December 12, 18	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+<div><strong>	Thursday, December 13, 18	</strong><br/>	Project 1 - Phase 1	<br/>	Phil Weier	</div>
+<div><strong>	Friday, December 14, 18	</strong><br/>	Flex day (no class is currently scheduled but this could change).	<br/>		</div></div>
+<div class="" ></br><h1>JANUARY</h1></br><div class="calendarFlexContainer weekdays"><div class="weekdays">Monday</div><div class="weekdays">Tuesday</div><div class="weekdays">Wednesday</div><div class="weekdays">Thursday</div><div class="weekdays">Friday</div></div>          <div class="calendarFlexContainer">						
+<div><strong>	Monday, January 7, 19	</strong><br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
+<div><strong>	Tuesday, January 8, 19	</strong><br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
+<div><strong>	Wednesday, January 9, 19	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+<div><strong>	Thursday, January 10, 19	</strong><br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
+<div><strong>	Friday, January 11, 19	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, January 14, 19	</strong><br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
+<div><strong>	Tuesday, January 15, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Wednesday, January 16, 19	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+<div><strong>	Thursday, January 17, 19	</strong><br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
+<div><strong>	Friday, January 18, 19	</strong><br/>	ASP.NET – MVC	<br/>	Phil Weier	</div></div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, January 21, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+  <div><strong>	Tuesday, January 22, 19	</strong><br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
+  <div><strong>	Wednesday, January 23, 19	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+  <div><strong>	Thursday, January 24, 19	</strong><br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
+  <div><strong>	Friday, January 25, 19	</strong><br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div></div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, January 28, 19	</strong><br/>	ASP.NET – Web API	<br/>	Pat McGee	</div>
+  <div><strong>	Tuesday, January 29, 19	</strong><br/>	OO PHP & Laravel	<br/>	Jeff Parker	</div>
+  <div><strong>	Wednesday, January 30, 19	</strong><br/>	MEAN Stack	<br/>	Medhat Elmasry	</div>
+  <div><strong>	Thursday, January 31, 19	</strong><br/>	Web Application Security	<br/>	Pat McGee	</div>
+  <div></div></div>
+
+<div class="" ></br>
+  <h1>FEBRUARY</h1></br>
+  <div class="calendarFlexContainer weekdays">
+    <div class="weekdays">Monday</div>
+    <div class="weekdays">Tuesday</div>
+    <div class="weekdays">Wednesday</div>
+    <div class="weekdays">Thursday</div>
+    <div class="weekdays">Friday</div></div>          
+  
+  <div class="calendarFlexContainer">
+    <div></div> <div></div> <div></div> <div></div>												
+    <div><strong>	Friday, February 1, 19	</strong><br/>	Flex day (no class is currently scheduled but this could change).	<br/>	</div></div>
+  
+  <div class="calendarFlexContainer">
+    <div><strong>	Monday, February 4, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+    <div><strong>	Tuesday, February 5, 19	</strong><br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div>
+    <div><strong>	Wednesday, February 6, 19	</strong><br/>	OO PHP & Laravel	<br/>	Pat McGee	</div>
+    <div><strong>	Thursday, February 7, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+    <div><strong>	Friday, February 8, 19	</strong><br/>	OO PHP & Laravel	<br/>	Pat McGee	</div></div>
+
+<div class=" calendarFlexContainer" >
+  <div><strong>	Monday, February 11, 19	</strong><br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div>
+  <div><strong>	Tuesday, February 12, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+  <div><strong>	Wednesday, February 13, 19	</strong><br/>	OO PHP & Laravel	<br/>	Pat McGee	</div>
+  <div><strong>	Thursday, February 14, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+  <div><strong>	Friday, February 15, 19	</strong><br/>	OO PHP & Laravel	<br/>	Pat McGee	</div></div>
+
+<div class=" calendarFlexContainer" ><div><strong>	Monday, February 18, 19	</strong><br/>	Family Day	<br/>		</div>
+<div><strong>	Tuesday, February 19, 19	</strong><br/>	Web Application Security	<br/>	Pat McGee	</div>
+<div><strong>	Wednesday, February 20, 19	</strong><br/>	Web Application Security	<br/>	Pat McGee	</div>
+<div><strong>	Thursday, February 21, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+<div><strong>	Friday, February 22, 19	</strong><br/>	Project 1 - Phase 2	<br/>	Phil Weier	</div></div>
+
+  <div class=" calendarFlexContainer" ><div><strong>	Monday, February 25, 19	</strong><br/>	Web Application Security	<br/>	Pat McGee	</div>
+  <div><strong>	Tuesday, February 26, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div>
+  <div><strong>	Wednesday, February 27, 19	</strong><br/>	Web Application Security	<br/>	Pat McGee	</div>
+  <div><strong>	Thursday, February 28, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+  <div></div></div>
+</div>
+
+
+<div class="" ></br>
+<h1>MARCH</h1></br>
+<div class="calendarFlexContainer weekdays">
+  <div class="weekdays">Monday</div><div class="weekdays">Tuesday</div><div class="weekdays">Wednesday</div><div class="weekdays">Thursday</div><div class="weekdays">Friday</div></div>
+  
+  <div class="calendarFlexContainer">	
+    <div></div>
+    <div> </div>
+    <div></div>
+    <div></div>
+    <div><strong>	Friday, March 1, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div></div>
+
+  <div class="calendarFlexContainer">	
+    <div><strong>	Monday, March 4, 19	</strong><br/>	AWS Intro	<br/>	Pat McGee	</div>
+    <div><strong>	Tuesday, March 5, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div>
+    <div><strong>	Wednesday, March 6, 19	</strong><br/>	AWS Intro	<br/>	Pat McGee	</div>
+    <div><strong>	Thursday, March 7, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+    <div><strong>	Friday, March 8, 19	</strong><br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div></div>
+
+<div class=" calendarFlexContainer" ><div><strong>	Monday, March 11, 19	</strong><br/>	AWS Intro	<br/>	Pat McGee	</div>
+<div><strong>	Tuesday, March 12, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div>
+<div><strong>	Wednesday, March 13, 19	</strong><br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
+<div><strong>	Thursday, March 14, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+<div><strong>	Friday, March 15, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, March 18, 19	</strong><br/>	March Break	<br/>		</div>
+<div><strong>	Tuesday, March 19, 19	</strong><br/>	March Break	<br/>		</div>
+<div><strong>	Wednesday, March 20, 19	</strong><br/>	March Break	<br/>		</div>
+<div><strong>	Thursday, March 21, 19	</strong><br/>	March Break	<br/>		</div>
+<div><strong>	Friday, March 22, 19	</strong><br/>	March Break	<br/>		</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, March 25, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Tuesday, March 26, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div>
+<div><strong>	Wednesday, March 27, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Thursday, March 28, 19	</strong><br/>	Resume Writing Essentials	<br/>	 Marlene Delanghe 	</div>
+<div><strong>	Friday, March 29, 19	</strong><br/>	SNOW DAY MAKE-UP	<br/>	Michael Whyte	</div></div>
+<div class="" ></br><h1>APRIL</h1></br><div class="calendarFlexContainer weekdays"><div class="weekdays">Monday</div><div class="weekdays">Tuesday</div><div class="weekdays">Wednesday</div><div class="weekdays">Thursday</div><div class="weekdays">Friday</div></div>          <div class="calendarFlexContainer">						
+<div><strong>	Monday, April 1, 19	</strong><br/>	Flex day - Pat will be available in the lab for assistance if needed.	<br/>		</div>
+<div><strong>	Tuesday, April 2, 19	</strong><br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
+<div><strong>	Wednesday, April 3, 19	</strong><br/>	iOS Development	<br/>	Phil Weier	</div>
+<div><strong>	Thursday, April 4, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+<div><strong>	Friday, April 5, 19	</strong><br/>	Interview Skills	<br/>	 Marlene Delanghe 	</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, April 8, 19	</strong><br/>	Project 1 - Phase 3	<br/>	Phil Weier	</div>
+<div><strong>	Tuesday, April 9, 19	</strong><br/>	Mock Interviews	<br/>	 Marlene Delanghe/Phil/Pat 	</div>
+<div><strong>	Wednesday, April 10, 19	</strong><br/>	Front End Web Design/Scripting/Tooling	<br/>	Michael Whyte	</div>
+<div><strong>	Thursday, April 11, 19	</strong><br/>	Android Introduction	<br/>	Paul Mills	</div>
+<div><strong>	Friday, April 12, 19	</strong><br/>	Flex day (no class is currently scheduled but this could change).	<br/>		</div></div>
+<div class=" calendarFlexContainer" ><div><strong>	Monday, April 15, 19	</strong><br/>	Industry Project Begins	<br/>	Phil Weier	</div>
+<div></div><div></div><div></div><div></div>
+</div>
+</div>
+
   </body>
 </html>
