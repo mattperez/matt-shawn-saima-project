@@ -1,3 +1,16 @@
+#navbarContent{
+    position: absolute;
+    text-align: left;
+    top: 0%;
+    z-index: 4;
+    width: 100%;
+    font-size: 20px;
+}
+
+#scheduleButton{
+    margin-top:10%;
+}
+
 .table .thead-dark tr th{
     background-color:  rgb(6, 6, 105);
 }

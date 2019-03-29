@@ -29,6 +29,7 @@ header{
             outline: none;
             padding: 7px 20px;
             font-weight: bold;
+            z-index: 4;
 
             #{$link-hover-selector} {
                 border-bottom: 3px solid #e9eb2e;
