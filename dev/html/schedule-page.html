@@ -10,12 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="../scripts/script.js"></script>
-<<<<<<< HEAD
-
-  <script defer="defer">
-=======
   <script>
->>>>>>> master
       $(function(){
           var filename = "./header.html"
           $("#navbarContent").load(filename);
@@ -24,16 +19,11 @@
   
 </head>
   <body>
-    <div class="wrapper">
     <div id="navbarContent"></div>
+    <div class="wrapper">
     <div class="scheduleWrapper">    
-      <div>
-        <button id="scheduleButton" type="button" class="btn" onclick="toggleListView()">Grid View</button>
-      </div>
+      <button id="scheduleButton" type="button" class="btn" onclick="toggleListView()">Grid View</button>
       <table class="table table-striped listView" id="listView">
-        <!-- <thead class="thead">
-          <tr><th>Day</th><th>Date</th><th>Course</th><th>Instructor</th></tr>
-        </thead> -->
         <tbody>
           <tr class="monthName"><th colspan="4">September, 2018</th></tr>
           <tr class="dayDateCourseInstructor"><td>Day</td><td>Date</td><td>Course</td><td>Instructor</td></tr>
