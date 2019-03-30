@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../styles/welcomePage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-  <script defer="defer">
+  <script>
       $(function(){
           var filename = "./header.html"
           $("#navbarContent").load(filename);
@@ -26,12 +26,22 @@
             full stack web application developer.</h3>
       </div>
 
-      <diV>
-        <h2>Become a Web Developer with the SSD Program Today.</h2>
-          Become a Web Developer with the SSD Program Today.
-          The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, full-time business application development program offered by BCIT's School of Computing and Academic Studies, within the HTP department at the downtown Vancouver campus.
-          
-          It prepares individuals for high-demand careers in the technical areas of web application development, programming, database and systems analysis. Students learn industry-ready skills through extensive hands-on practice in current scripting and coding techniques, object-oriented architecture patterns, application security and scalability, developer tools, and platforms for building complete web-based business applications from scratch.
-      </diV>
+      <section class="programIntro">
+        <article>
+          <h4>Become a Web Developer with the SSD Program Today!</h2>
+        </article>
+         
+        <article>
+          <p>The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, full-time business application development program offered by BCIT's School of Computing and Academic Studies, within the HTP department at the downtown Vancouver campus.</p><br>        
+          <p>It prepares individuals for high-demand careers in the technical areas of web application development, programming, database and systems analysis. Students learn industry-ready skills through extensive hands-on practice in current scripting and coding techniques, object-oriented architecture patterns, application security and scalability, developer tools, and platforms for building complete web-based business applications from scratch.</p>
+        </article>
+      </section>
+      <div id="footerContent"></div>
+      <script>
+        $(function(){
+            var filename = "./footer.html"
+            $("#footerContent").load(filename);
+        });
+    </script>
   </body>
 </html>

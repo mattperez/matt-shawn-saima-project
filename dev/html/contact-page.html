@@ -30,5 +30,12 @@
         <textarea name="comments" placeholder="Tell us about yourself" required></textarea>
     </form>
     </div>   
+    <div id="footerContent" style="margin-top:-5px;"></div>
+    <script>
+      $(function(){
+          var filename = "./footer.html"
+          $("#footerContent").load(filename);
+      });
+  </script>
   </body>
 </html>
