@@ -3,9 +3,10 @@
 header{
     nav {
            $border: 1px solid white;
-           width: 80%;
+        //    width: 100%;
            background: #f7470e;
            height: 35px;
+        //    margin: 0 auto;
         
         .topnav{
         @include flatten;
@@ -32,7 +33,7 @@ header{
             z-index: 4;
 
             #{$link-hover-selector} {
-                border-bottom: 3px solid #e9eb2e;
+                border-top: 4px solid #50b490;
             }
     
             @at-root nav li:last-child a {
