@@ -1,15 +1,44 @@
-#scheduleButton{
-    margin-top:13%;
+.wrapper{
+    background: white;
+    #navbarContent{
+        width: 79%;
+    }
+
+    #scheduleButton{
+        margin-top:13%;
+        background: #50b490;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .scheduleWrapper{
+        margin: 0 10px;
+
+        .monthName{
+            width: 100%;
+            height:40px;
+            padding: 10px 0;
+            background: #50b490;
+            text-align: center;
+        }
+    
+        .table .dayDateCourseInstructor{
+            background-color: #ddd;
+            color: #2e5ec0;
+            font-weight: bold;
+        }
+        .table tr:not(.monthName):not(.dayDateCourseInstructor):hover{
+            background-color: #e9eb2e;
+        }
+    }
+    
 }
 
-.scheduleWrapper{
-    background-color: rgb(255, 254, 254);
-    margin: 0 5%;
-}
 
-.table .thead-dark tr th{
-    background-color:  rgb(6, 6, 105);
-}
+
+
+
 
 .calendarView{
     display: none;
