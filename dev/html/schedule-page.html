@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="../scripts/script.js"></script>
-  <script defer="defer">
+  <script>
       $(function(){
           var filename = "./header.html"
           $("#navbarContent").load(filename);
@@ -414,6 +414,12 @@
     </div>
     </div>
   </div>
-
+  <div id="footerContent" style="margin-top:-15px;"></div>
+  <script>
+    $(function(){
+        var filename = "./footer.html"
+        $("#footerContent").load(filename);
+    });
+  </script>
   </body>
 </html>

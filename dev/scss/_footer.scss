@@ -76,18 +76,31 @@ h5{
 
 .footerHeading{
     background: #50b490;
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footerHeading h5{
     text-align: center;  
+    display: inline;
+}
+
+.footerHeading h5:nth-child(1){
+    margin: 0 90px;
+}
+
+.footerHeading h5:nth-child(2){
+    margin: 85px;
+}
+.footerHeading h5:nth-child(3){
+    margin: 135px;
+}
+.footerHeading h5:nth-child(4){
+    margin: 0 90px;
 }
 
 .container{
-    padding-left: 10px;
+    padding-left: 50px;
     padding-right: 10px;
     margin-left: 0px;
     margin-right: 0px;
