@@ -4,6 +4,7 @@
         width: 79%;
     }
 
+    //List View
     #scheduleButton{
         margin-top:13%;
         background: #50b490;
@@ -32,47 +33,62 @@
             background-color: #e9eb2e;
         }
     }
+
+    //Grid View
+    .calendarView{
+        display: none;
+    }
+
+    #calendarView h4{
+        color: #2e5ec0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .weekendsGridContainer{
+        display: grid;
+        grid-template-columns: 1fr repeat(2 , minmax(auto, 540px)) 1fr;
+    }
+
+    .weekendsGridContent{
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: repeat(5, .2fr);
+        grid-gap: .1vw;
+        margin: 0 10px;
+    }
+
+    .weekdays{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: #50b490;
+        font-weight: bold;
+    }
+
+    .coursesGridContainer{
+        display: grid;
+        grid-template-columns: 1fr repeat(2 , minmax(auto, 540px)) 1fr;
+    }
+
+    .coursesGridContent{
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: repeat(5, .2fr);
+        grid-gap: .2vw;
+        margin: 0 10px;
+    }
+
+    .coursesGridContent div{
+        border: 2px solid #ddd;
+        padding: 20px;
+        width: 234px;
+        height:156px;
+    }
     
 }
 
 
 
-
-
-
-.calendarView{
-    display: none;
-}
-
-.calendarFlexContainer{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-.calendarFlexContainer div{
-    background-color: #f1f1f1;
-    width: 15%;
-    height: 10em;
-    margin: 10px;
-    text-align: center;
-    line-height: 1.5em;
-    font-size: 1.5em;
-}
-.weekdays div{
-    width: 15%;
-    height: 2em;
-    margin: 10px;
-    text-align: center;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    border: solid black thin
-}
-h1{
-    background-color:rgb(6, 6, 105);
-    color: white;
-}
-
-#footerContent{
-    margin-top:-15px;
-}
