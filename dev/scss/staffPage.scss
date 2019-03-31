@@ -1,24 +1,42 @@
 
 .faculty{
-    margin-top: 13%;
+    margin-top: 6%;
+}
+h1{
+    // should align the fonts being used globally
+}
+.wrapper{
+    background-color: white;
+    padding: 2%;
+  
+}
+.row{
+    margin-bottom: 15px;
+    border: 5px solid white;
+}
+.col-lg-4{
+    margin: 10px 0px;
 }
 
-.staffWrapper{
-    background-color: rgb(255, 254, 254);
-    margin: 0 5%;
+.card-title{
+    color: #50b490;
+}
+
+.card-text{
+    height:10%;
 }
 
 h1{
-    background-color:rgba(0, 0, 0, 0.4);
-    color: white;
+    color: #50b490;
+    border: solid thin #50b490;
 }
 
-.card .card-header, .card .card-footer{
-    background-color: rgb(6, 6, 105);
+.card .card-header, .card{
+    background-color: #50b490;
 }
 
 .card .card-footer a{
-    color: white;
+    color: #007bff;
 }
 
 #footerContent{

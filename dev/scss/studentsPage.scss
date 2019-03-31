@@ -1,14 +1,15 @@
 
 .table{
-    margin-top: 13%;
+    margin-top: 6%;
 }
 .studentWrapper{
     background-color: rgb(255, 254, 254);
-    margin: 0 5%;
+    //margin: 0 5%;
 }
 
-.table .thead-dark tr th{
-    background-color:  rgb(6, 6, 105);
+.table .thead tr th{
+    color:  #50b490;
+    font-weight: bold;
 }
 
 #footerContent{
