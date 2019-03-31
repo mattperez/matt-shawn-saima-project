@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overview Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/overview.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
@@ -15,7 +16,12 @@
   </script>
 </head>
   <body>
+    <div class="wrapper">
     <div id="navbarContent"></div>
+    <div class="overviewWrapper">
+      <!-- Add content here -->
+
+    </div>   
     <div id="footerContent"></div>
     <script>
       $(function(){
@@ -23,5 +29,6 @@
           $("#footerContent").load(filename);
       });
   </script>
+  </div>
   </body>
 </html>

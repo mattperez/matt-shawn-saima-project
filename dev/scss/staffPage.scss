@@ -1,44 +1,67 @@
-
-.faculty{
-    margin-top: 6%;
-}
-h1{
-    // should align the fonts being used globally
-}
 .wrapper{
-    background-color: white;
-    padding: 2%;
-  
-}
-.row{
-    margin-bottom: 15px;
-    border: 5px solid white;
-}
-.col-lg-4{
-    margin: 10px 0px;
+
+    .staffWrapper{
+        margin-top: 13%;  
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .pageHeading{
+            color: #50b490;
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .facultyAndAdministration{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            background: #50b490;
+            vertical-align: middle;
+            padding-top: 7.5px;
+            padding-bottom: 7.5px;
+        }
+
+        .col-lg-4{
+            margin: 10px 0px;
+        }
+
+        .card-title{
+            color: #50b490;
+        }
+
+        .card .card-footer a{
+            color: #007bff;
+        }
+    }
+
+    #footerContent{
+        margin-top:-15px;
+    }
 }
 
-.card-title{
-    color: #50b490;
-}
 
-.card-text{
-    height:10%;
-}
 
-h1{
-    color: #50b490;
-    border: solid thin #50b490;
-}
 
-.card .card-header, .card{
-    background-color: #50b490;
-}
 
-.card .card-footer a{
-    color: #007bff;
-}
 
-#footerContent{
-    margin-top:-15px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

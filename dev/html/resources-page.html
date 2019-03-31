@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resource Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/resource.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
@@ -15,8 +16,9 @@
   </script>
 </head>
   <body>
+    <div class="wrapper">
     <div id="navbarContent"></div>
-    <div id="container" style="margin-top: 13%">
+    <div id="resourceWrapper">
       <!-- Card Group Start -->
       <div class="card-group">
         <div class="card card-body">
@@ -47,12 +49,13 @@
       <!-- Card Group End -->
       
     </div>
-    <div id="footerContent" style="margin-top:0px;"></div>
+    <div id="footerContent"></div>
     <script>
       $(function(){
           var filename = "./footer.html"
           $("#footerContent").load(filename);
       });
   </script>
+  </div>
   </body>
 </html>
