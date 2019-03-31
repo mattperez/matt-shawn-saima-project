@@ -1,12 +1,8 @@
 .wrapper{
     background: white;
-    #navbarContent{
-        width: 79%;
-    }
 
     //List View
     #scheduleButton{
-        margin-top:7%;
         background: #50b490;
         color: white;
         font-weight: bold;
@@ -14,7 +10,9 @@
     }
 
     .scheduleWrapper{
-        // margin: 0 10px;
+         margin-left: 10px;
+         margin-right: 10px;
+         margin-top: 13%;
 
         .monthName{
             width: 100%;

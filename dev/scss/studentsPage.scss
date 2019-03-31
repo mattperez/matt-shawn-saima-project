@@ -1,17 +1,39 @@
+.wrapper{
 
-.table{
-    margin-top: 6%;
-}
-.studentWrapper{
-    background-color: rgb(255, 254, 254);
-    //margin: 0 5%;
-}
+    .studentWrapper{
+        margin-top: 13%;  
+        margin-left: 10px;
+        margin-right: 10px;
 
-.table .thead tr th{
-    color:  #50b490;
-    font-weight: bold;
-}
+        .pageHeading{
+            color: #50b490;
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
 
-#footerContent{
-    margin-top:-15px;
+        .table .thead{
+            background: #50b490;
+        }
+
+        .table .thead tr th{
+            color:  white;
+            font-weight: bold;
+        }
+
+        .tableBody tr td{
+            padding-top: 7.5px;
+            padding-bottom: 7.5px;
+            vertical-align: middle;
+        }
+
+        .table tr:not(.tableHeadingRow):hover{
+            background-color: #e9eb2e;
+        }
+    }
+    
+    #footerContent{
+        margin-top:-15px;
+    }
+
 }
