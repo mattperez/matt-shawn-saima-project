@@ -1,42 +1,43 @@
-.welcomePage-image > img{
-    filter: blur(2px);
-    height: 650px; 
-    width: 100%;
-    z-index: 0;
+.wrapper{
+    .welcomePage-image > img{
+        filter: blur(2px);
+        height: 650px; 
+        width: 100%;
+        z-index: 0;
+    }
+    
+    /* Position text in the middle of the page/image */
+    .welcomePage-text {
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.4); 
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #navbarContent{
+        position: absolute;
+        text-align: left;
+        top: 0%;
+        z-index: 4;
+        width: 80%;
+    }
+    
+    .programIntro{
+        margin-top: 20px;  
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
 }
 
-/* Position text in the middle of the page/image */
-.welcomePage-text {
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 60%;
-    padding: 20px;
-    text-align: center;
-}
-
-#navbarContent{
-    position: absolute;
-    text-align: left;
-    top: 0%;
-    z-index: 4;
-    width: 80%;
-}
-
-.programIntro{
-    background-color: white;
-    margin-bottom: 0;
-}
-
-#footerContent{
-    margin-top:-15px;
-}
 
 
