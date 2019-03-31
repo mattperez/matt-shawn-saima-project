@@ -13,10 +13,10 @@
         }
 
         .facultyAndAdministration{
-            color: white;
+            //color: white;
             text-align: center;
             font-weight: bold;
-            background: #50b490;
+            //background: #50b490;
             vertical-align: middle;
             padding-top: 7.5px;
             padding-bottom: 7.5px;
@@ -27,7 +27,14 @@
         }
 
         .card-title{
-            color: #50b490;
+            //color: #50b490;
+            font-style: italic;
+        }
+        .card-body{
+            height: 11em;
+        }
+        .card-text{
+            font-size: .8em;
         }
 
         .card .card-footer a{
