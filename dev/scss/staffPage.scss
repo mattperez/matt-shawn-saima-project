@@ -5,6 +5,10 @@
 h1{
     // should align the fonts being used globally
 }
+h3{
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif Black;
+}
 .wrapper{
     background-color: white;
     padding: 2%;
@@ -19,7 +23,7 @@ h1{
 }
 
 .card-title{
-    color: #50b490;
+    // color: #50b490;
 }
 
 .card-text{
@@ -27,8 +31,10 @@ h1{
 }
 
 h1{
-    color: #50b490;
-    border: solid thin #50b490;
+    color: black;
+    // color: white;
+    // background-color: #50b490;
+
 }
 
 .card .card-header, .card{
