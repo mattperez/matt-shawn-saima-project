@@ -1,0 +1,38 @@
+.wrapper{
+
+    #resourceWrapper{
+        margin-top: 13%;  
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+
+        .pageHeading{
+            color: #50b490;
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .list-group-item{          
+
+            .resourceName h5{
+                font-weight: bold;
+                font-size: 18px;
+                display: inline;
+                padding-left: 10px;
+            }
+    
+            .resourceName h5:hover{
+                text-decoration: none;
+            }
+
+            .resourceName a .fa-download{
+                float: right;
+            }
+
+            p{
+                padding-top: 20px;
+            }
+        }
+    }
+}

@@ -1,78 +1,7 @@
-// Footer Styles
-// footer {
-//     background-color: $bg-footer-color;
-//     height: 100%;
-//     .footer-nav{
-//         $border: 1px solid white;
-//         border-top: $border;
-//         margin: 0 auto;
-//         width: 50%;
-//         padding:$padding;
-    
-//         ul{
-//             list-style: none;
-//             display: flex;
-//             flex: 1;
-//             flex-direction: row;
-//             margin: 0px auto;          
-//         }
-
-//         li{
-//             font-size: 12px;
-//         }
-    
-//         a {
-//             display: block;
-//             color: $text-color-dark;
-//             border-right: $border;
-//             text-align: center;
-//             text-decoration: none;
-//             outline: none;
-//             padding: 0px 30px;
-            
-//             #{$link-hover-selector} {
-//                 background-color: rgba(white, 0.3);
-//             }
-//         }
-
-//         @include mq($phone-wide) {
-//             margin: 0 ;
-//             ul{
-//                 flex: 1;
-//                 flex-direction: row;
-//             }
-//             a {
-//                 display: block;
-//                 padding: 0px 5px;
-        
-//             }
-    
-//         }
-
-//         @include mq($tablet-landscape-medium) {
-
-//             a {
-//                 display: block;
-//                 padding: 0px 5px;
-        
-//             }
-    
-//         }
-//     }
-//     p{
-//         text-align: center;
-//     }
-// }
-
 .footer{
     background:#2e5ec0;
     margin-bottom: 0;
     padding-bottom: 5px;
-}
-
-h5{
-    color: white;
-    font-weight: bold;
 }
 
 .footerHeading{
@@ -84,6 +13,8 @@ h5{
 .footerHeading h5{
     text-align: center;  
     display: inline;
+    color: white;
+    font-weight: bold;
 }
 
 .footerHeading h5:nth-child(1){
@@ -111,12 +42,12 @@ h5{
     list-style: none;
 }
 
-ul li a{
+.col-lg-3 ul li a{
     color: white;
     text-align: center;
 }
 
-ul li a:hover{
+.col-lg-3 ul li a:hover{
     color: #50b490;
 }
 .footer-copyright{

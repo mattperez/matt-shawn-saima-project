@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .faculty{
     margin-top: 6%;
@@ -9,42 +10,87 @@ h3{
     font-size: 1.2em;
     font-family: 'Times New Roman', Times, serif Black;
 }
+=======
+>>>>>>> master
 .wrapper{
-    background-color: white;
-    padding: 2%;
-  
-}
-.row{
-    margin-bottom: 15px;
-    border: 5px solid white;
-}
-.col-lg-4{
-    margin: 10px 0px;
-}
 
+<<<<<<< HEAD
 .card-title{
     // color: #50b490;
 }
+=======
+    .staffWrapper{
+        margin-top: 13%;  
+        margin-left: 10px;
+        margin-right: 10px;
+>>>>>>> master
 
-.card-text{
-    height:10%;
-}
+        .pageHeading{
+            color: #50b490;
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
 
+<<<<<<< HEAD
 h1{
     color: black;
     // color: white;
     // background-color: #50b490;
 
 }
+=======
+        .facultyAndAdministration{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            background: #50b490;
+            vertical-align: middle;
+            padding-top: 7.5px;
+            padding-bottom: 7.5px;
+        }
+>>>>>>> master
 
-.card .card-header, .card{
-    background-color: #50b490;
+        .col-lg-4{
+            margin: 10px 0px;
+        }
+
+        .card-title{
+            color: #50b490;
+        }
+
+        .card .card-footer a{
+            color: #007bff;
+        }
+    }
+
+    #footerContent{
+        margin-top:-15px;
+    }
 }
 
-.card .card-footer a{
-    color: #007bff;
-}
 
-#footerContent{
-    margin-top:-15px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

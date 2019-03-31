@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resource Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/resource.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script>
@@ -15,44 +17,52 @@
   </script>
 </head>
   <body>
+    <div class="wrapper">
     <div id="navbarContent"></div>
-    <div id="container" style="margin-top: 13%">
-      <!-- Card Group Start -->
-      <div class="card-group">
-        <div class="card card-body">
-          <h5 class="card-title"><a href="https://i.kym-cdn.com/entries/icons/original/000/020/011/doge.PNG">Helpful Link</a></h5>
-        <div class="card-body">
-          <p>This is an excelent resource for furthuring my education in this specific field</p>
-        </div> 
-        </div>
-        <div class="card card-body">
-            <h5 class="card-title"><a href="https://i.kym-cdn.com/entries/icons/original/000/020/011/doge.PNG">Helpful Link</a></h5>
-          <div class="card-body">
-            <p>This is an excelent resource for furthuring my education in this specific field</p>
-          </div> 
-        </div>  
-        <div class="card card-body">
-            <h5 class="card-title"><a href="https://i.kym-cdn.com/entries/icons/original/000/020/011/doge.PNG">Helpful Link</a></h5>
-          <div class="card-body">
-            <p>This is an excelent resource for furthuring my education in this specific field</p>
-          </div> 
-        </div>
-        <div class="card card-body">
-            <h5 class="card-title"><a href="https://i.kym-cdn.com/entries/icons/original/000/020/011/doge.PNG">Helpful Link</a></h5>
-          <div class="card-body">
-            <p>This is an excelent resource for furthuring my education in this specific field</p>
-          </div> 
-        </div> 
-      </div>
-      <!-- Card Group End -->
-      
+    <div id="resourceWrapper">
+      <h5 class="pageHeading">E-RESOURCES</h5>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span class="resourceName"><img src="../images/Visual-Studio.png" alt="Visual studio logo" style="max-height:2em; max-width:2em">
+            <h5>Visual Studio Community 2017</h5>
+            <a target="_blank" href="https://visualstudio.microsoft.com/downloads/">
+              <i class="fa fa-download">Download</i></a>
+          </span> 
+          <p>Microsoft Visual Studio is an integrated development environment from Microsoft. Free, fully-featured IDE for students, open-source and individual developers.</p>
+        </li>
+        <li class="list-group-item">
+          <span class="resourceName"><img src="../images/mssql-logo.png" alt="MS SQL Server logo" style="max-height:2em; max-width:2em">
+            <h5>Microsoft SQL Server 2014 Express</h5>
+            <a target="_blank" href="https://www.microsoft.com/en-ca/download/details.aspx?id=42299">
+              <i class="fa fa-download">Download</i></a>
+          </span> 
+          <p>Microsoft SQL Server 2014 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications.</p>
+        </li>
+        <li class="list-group-item">
+          <span class="resourceName"><img src="../images/Visual-Studio-Code.png" alt="Visual studio code logo" style="max-height:2em; max-width:2em">
+            <h5>Visual Studio Code</h5>
+            <a target="_blank" href="https://code.visualstudio.com/download">
+              <i class="fa fa-download">Download</i></a>
+          </span> 
+          <p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.</p>
+        </li>
+        <li class="list-group-item">
+          <span class="resourceName"><img src="../images/logo-eclipse.png" alt="Eclipse logo" style="max-height:2em; max-width:2em">
+            <h5>Eclipse</h5>
+            <a target="_blank" href="https://www.eclipse.org/downloads/">
+              <i class="fa fa-download">Download</i></a>
+          </span> 
+          <p>Eclipse is an integrated development environment (IDE) used in computer programming, and is the most widely used Java IDE.</p>
+        </li>
+      </ul>     
     </div>
-    <div id="footerContent" style="margin-top:0px;"></div>
+    <div id="footerContent"></div>
     <script>
       $(function(){
           var filename = "./footer.html"
           $("#footerContent").load(filename);
       });
   </script>
+  </div>
   </body>
 </html>
