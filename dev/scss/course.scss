@@ -7,10 +7,14 @@
     #container{
         margin-top: 13%;   
 
-        .courseSummeries > h5{
-            color: #50b490;
-            text-align: center;
-            padding-bottom: 10px;
+        .courseSummeries{
+
+            .pageHeading{
+                color: #50b490;
+                text-align: center;
+                padding-bottom: 10px;
+                font-weight: bold;
+            }
         }
    
         .row{
