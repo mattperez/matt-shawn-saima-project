@@ -1,4 +1,11 @@
 .wrapper{
+
+    .pageHeading{
+        color: #50b490;
+        padding-bottom: 10px;
+        font-weight: bold;
+    }
+
     .welcomePage-image > img{
         filter: blur(2px);
         height: 650px; 
@@ -28,7 +35,7 @@
         text-align: left;
         top: 0%;
         z-index: 4;
-        width: 80%;
+        width: 79%;
     }
     
     .programIntro{
