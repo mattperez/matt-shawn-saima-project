@@ -27,7 +27,14 @@
         }
 
         .card-title{
-            color: #50b490;
+            //color: #50b490;
+            font-style: italic;
+        }
+        .card-body{
+            height: 11em;
+        }
+        .card-text{
+            font-size: .8em;
         }
 
         .card .card-footer a{

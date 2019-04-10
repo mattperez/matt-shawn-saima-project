@@ -71,6 +71,9 @@
             color: white;
             background-color: #50b490;
             font-weight: bold;
+
+            width: 210px;
+            margin: 1%;
         }
     }
 
@@ -84,6 +87,8 @@
             grid-template-columns: repeat(5, .2fr);
             grid-gap: .2vw;
             margin: 0 10px;
+
+            font-size: .8em;
         }
     
         .coursesGridContent div{
@@ -91,6 +96,9 @@
             padding: 20px;
             //width: 234px;
             height:156px;
+            margin: 1%;
+
+
         }
     }
     
