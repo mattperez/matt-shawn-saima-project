@@ -13,7 +13,9 @@ function toggleListView(){
   }else {
       list.style.display="none";
       btn.innerText="List View";  
+      grid.style.display = "";
       monthName.style.display="none";
+      toggleCalendarView();
   }
   
   toggleCalendarView();
@@ -23,7 +25,7 @@ function toggleCalendarView(){
   var calView = document.getElementById("calendarView");
   var filename = "../html/scheduleGridView.html";
   $("#scheduleGridView").load(filename);
-  // calView.classList.toggle("calendarView");
+  //calView.classList.toggle("calendarView");
 }
 
   
