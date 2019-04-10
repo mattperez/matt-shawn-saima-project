@@ -8,6 +8,8 @@
          margin-bottom: 20px;
          @media (max-width: 580px){
             display: block;
+            margin-top: 10%;
+            margin-bottom: 20px;
          }
         
         #scheduleButton{
@@ -21,6 +23,8 @@
         .monthNameDropdown {
         position: relative;
         display: inline-block;
+        margin-top: -40px;
+        margin-bottom: 15px;
         }
 
         .monthNameDropdown .btn-success{
@@ -77,6 +81,19 @@
         .table tr:not(.monthName):not(.dayDateCourseInstructor):hover{
             background-color: #e9eb2e;
         }
+        tbody tr{
+            @media(max-width: 500px){
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        tbody td{
+            @media(max-width: 500px){
+                display: block;
+                width: 100%;
+            }
+        }
+
     }
 
     //Grid View
