@@ -7,7 +7,7 @@ function toggleListView(){
 
   if(list.style.display=="none"){
         list.style.display="";
-        btn.innerText="Grid View";
+        btn.innerText="Calendar View";
   }else {
       list.style.display="none";
       btn.innerText="List View";   
