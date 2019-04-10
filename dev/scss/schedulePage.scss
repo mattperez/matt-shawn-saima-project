@@ -77,6 +77,19 @@
         .table tr:not(.monthName):not(.dayDateCourseInstructor):hover{
             background-color: #e9eb2e;
         }
+        tbody tr{
+            @media(max-width: 500px){
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        tbody td{
+            @media(max-width: 500px){
+                display: block;
+                width: 100%;
+            }
+        }
+
     }
 
     //Grid View
