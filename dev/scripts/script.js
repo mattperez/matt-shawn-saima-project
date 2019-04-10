@@ -2,15 +2,16 @@
 function toggleListView(){
     var list = document.getElementById("listView");
     var btn= document.getElementById("scheduleButton");
-    
-    btn.innerText="hello shawn";
+    var monthName = document.getElementById("monthDropdown");
 
   if(list.style.display=="none"){
         list.style.display="";
+        monthName.style.display="";
         btn.innerText="Calendar View";
   }else {
       list.style.display="none";
-      btn.innerText="List View";   
+      btn.innerText="List View";  
+      monthName.style.display="none";
   }
   
   toggleCalendarView();

@@ -9,6 +9,30 @@
   <link rel="stylesheet" href="../styles/schedulePage.css">
 </head>
   <body>   
+      <div id="monthDropdown" class="monthNameDropdown" style="float:right;">
+        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" href='#'>Choose a month</button>
+        <span class="caret"></span></button>
+        <div class="dropdown-content">
+          <div class="firstSixMonth">
+            <a href="#january">January</a>
+            <a href="#february">February</a>
+            <a href="#march">March</a>
+            <a href="#april">April</a>
+            <a href="#may">May</a>
+            <a href="#june">June</a>
+          </div>
+
+          <div class="lastSixMonth">
+          <a href="#july">July</a>
+          <a href="#august">August</a>
+          <a href="#september">September</a>
+          <a href="#october">October</a>
+          <a href="#november">November</a>
+          <a href="#december">December</a>
+          </div>
+        </div>
+      </div>
+      
       <table class="table table-striped listView" id="listView">
         <tbody>
           <tr id="september" class="monthName"><th colspan="4">September, 2018</th></tr>
