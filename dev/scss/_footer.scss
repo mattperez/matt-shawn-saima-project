@@ -9,6 +9,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     height: 50px;
+    @media (max-width: 480px){
+        display: none;
+    }
 }
 
 ul li .text-uppercase{
@@ -42,8 +45,19 @@ ul li .text-uppercase{
     margin-right: 0px;
     margin-top: 10px;
 }
+
 .row ul li{
     list-style: none;
+    @media (max-width: 480px){
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.row h5{
+    @media (max-width: 480px){
+        display: none;
+    }
 }
 
 .col-lg-3 ul li a{
