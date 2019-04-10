@@ -79,15 +79,20 @@
             background-color: #e9eb2e;
         }
         tbody tr{
-            @media(max-width: 500px){
+            @media(max-width: 600px){
                 display: flex;
                 flex-wrap: wrap;
             }
         }
         tbody td{
-            @media(max-width: 500px){
+            @media(max-width: 600px){
                 display: block;
                 width: 100%;
+            }
+        }
+        tbody .dayDateCourseInstructor, .monthName{
+            @media(max-width: 600px){
+                display: none;   
             }
         }
 
