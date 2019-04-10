@@ -1,7 +1,7 @@
 .wrapper{
 
     .staffWrapper{
-        margin-top: 13%;  
+        // margin-top: 13%;  
         margin-left: 15px;
         margin-right: 15px;
 
@@ -11,15 +11,18 @@
             padding-bottom: 10px;
             font-weight: bold;
         }
+        .row{
+            margin-bottom: 15px;
+            border: 5px solid white;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
 
-        .facultyAndAdministration{
-            color: white;
+        .facultyAndAdministration{           
+            color: #50b490;
             text-align: center;
+            padding-bottom: 10px;
             font-weight: bold;
-            background: #50b490;
-            vertical-align: middle;
-            padding-top: 7.5px;
-            padding-bottom: 7.5px;
         }
 
         .col-lg-4{
@@ -28,15 +31,7 @@
 
         .card-title{
             color: #50b490;
-            font-weight: bold;
-            // font-style: italic;
-        }
-        // .card-body{
-        //     height: 11em;
-        // }
-        // .card-text{
-        //     font-size: .8em;
-        // }
+        }  
 
         .card .card-footer a{
             color: #007bff;
