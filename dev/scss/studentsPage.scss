@@ -15,6 +15,9 @@
 
         .table .thead{
             background: #50b490;
+            @media (max-width: 480px){
+                display: none;
+            }
         }
 
         .table .thead tr th{
@@ -26,6 +29,18 @@
             padding-top: 7.5px;
             padding-bottom: 7.5px;
             vertical-align: middle;
+            
+        }
+        .tableBody tr {
+            @media (max-width: 480px){
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .tableBody td {
+            @media (max-width: 480px){
+                width:100%;
+            }
         }
 
         .table tr:not(.tableHeadingRow):hover{
