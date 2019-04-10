@@ -3,10 +3,12 @@ function toggleListView(){
     var list = document.getElementById("listView");
     var btn= document.getElementById("scheduleButton");
     var monthName = document.getElementById("monthDropdown");
+    var grid = document.getElementById("scheduleGridView");
 
   if(list.style.display=="none"){
         list.style.display="";
         monthName.style.display="";
+        grid.style.display = "none";
         btn.innerText="Calendar View";
   }else {
       list.style.display="none";
