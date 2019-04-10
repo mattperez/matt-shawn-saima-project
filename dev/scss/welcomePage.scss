@@ -6,6 +6,7 @@
         color: #50b490;
         padding-bottom: 10px;
         font-weight: bold;
+        text-align: center;
     }
 
     .welcomePage-image > img{
@@ -40,11 +41,15 @@
         width: 100%;
     }
     
-    .programIntro{
+    .programIntroA{
         margin-top: 20px;  
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 20px;
+        display: flex;
+    }
+    .articleA, .articleB{
+        width: 50%;
     }
 }
 
