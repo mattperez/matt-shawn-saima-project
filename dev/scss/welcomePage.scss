@@ -24,14 +24,37 @@
         font-weight: bold;
         border: 3px solid #f1f1f1;
         position: absolute;
-        top: 60%;
+        // top: 90%;
+        // visibility: visible;
         left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
+        //transform: translate(-50%, -50%);
+        z-index: 3;
         width: 60%;
         padding: 20px;
         text-align: center;
+        //overflow:hidden;
+        animation: 1s ease-in 0s 1 slideInFromBottom forwards;
     }
+
+    @keyframes slideInFromBottom {
+        0% {
+          transform: translate(-50%, -50%);
+          top: 80%;
+          opacity: 0;
+        }
+        100% {
+          transform: translate(-50%, -50%);
+          top:60%;
+        }
+      }
+      
+    //   header {  
+    //     /* This section calls the slideInFromLeft animation we defined above */
+    //     animation: 1s ease-out 0s 1 slideInFromLeft;
+        
+    //     background: #333;
+    //     padding: 30px;
+    //   }
     
     #navbarContent{
         position: absolute;
