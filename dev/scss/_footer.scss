@@ -8,9 +8,9 @@
         padding-top: 10px;
         padding-bottom: 10px;
         height: 40px;
-        @media (max-width: 600px){
-            display: none;
-        }
+        // @media (max-width: 600px){
+        //     display: none;
+        // }
     }
 
     .container{
@@ -19,11 +19,33 @@
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 10px;
+
+        @media (max-width: 980px){
+            .row #thirdAndFourthRow{
+                padding-top: 50px;
+            }
+        }
+
+        @media (max-width: 570px){
+            .row #secondRow{
+                padding-top: 50px;
+            }
+        }
     }
 
     .containerAndContact{
         display: flex;
         justify-content: space-around;
+
+        @media (max-width: 980px){
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            
+            .contact{
+                text-align: center;
+            }
+        }
 
         .contact{
             font-weight: bold;
@@ -34,11 +56,11 @@
     
     .row ul li{
         list-style: none;
-        @media (max-width: 600px){
-            padding-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-        }
+        // @media (max-width: 600px){
+        //     padding-top: 10px;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        // }
     }
     
     ul li .text-uppercase{
@@ -49,6 +71,11 @@
         position: absolute;
         margin-top:-42px;
         margin-bottom: 20px;
+
+        @media (max-width: 980px){
+            margin-top:-50px;
+            margin-bottom: 20px;
+        }
     }
 }
 
