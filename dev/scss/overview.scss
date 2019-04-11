@@ -13,6 +13,23 @@
             font-weight: bold;
         }
 
+        .generalInfo{
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width: 1050px){
+                flex-direction: column;
+
+                img{
+                    // width: 1150px;
+                }
+            }
+
+            p{
+                border-right: 10px solid white;
+            }
+        }
+
         .infoHeading{
             color: white;
             background: #50b490;

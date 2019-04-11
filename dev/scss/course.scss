@@ -24,6 +24,23 @@
         .col-lg-4{
             margin: 10px 0px;
         }
+
+        .card-body{
+            height: 360px;
+            padding: 5px;
+
+            @media (max-width: 1160px){
+                overflow-y: scroll;
+            }
+            
+            @media (max-width: 970px){
+                overflow: hidden;
+            } 
+
+            @media (max-width: 580px){
+                overflow-y: scroll;
+            }         
+        }
     
         .card-title{
             color: #50b490;

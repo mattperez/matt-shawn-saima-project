@@ -26,6 +26,7 @@ function toggleCalendarView(){
   var filename = "../html/scheduleGridView.html";
   $("#scheduleGridView").load(filename);
   //calView.classList.toggle("calendarView");
+
 }
 
   
