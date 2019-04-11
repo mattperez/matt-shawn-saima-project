@@ -126,12 +126,10 @@ header{
         // }
 
         @media screen and (max-width: 1024px) {
-
-            
             .topnav a {display: none;}
             .topnav a.icon {
               float: right;
-              margin-right: 0;
+            //   right: 0;
               display: block;
               visibility: visible;
             }

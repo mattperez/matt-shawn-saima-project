@@ -14,6 +14,10 @@
             color: white;
             font-weight: bold;
             margin-bottom: 5px;
+
+            @media (max-width: 580px){
+                margin-bottom: 20px;
+             }
         }
 
         //Dropdown
@@ -22,6 +26,10 @@
         display: inline-block;
         margin-top: -40px;
         margin-bottom: 15px;
+
+        @media (max-width: 580px){
+            margin-top: -58px;
+            }
         }
 
         .monthNameDropdown .btn-success{
@@ -68,6 +76,7 @@
             padding: 10px 0;
             background: #50b490;
             text-align: center;
+            color: white;
         }
         
         .table .dayDateCourseInstructor{
@@ -78,19 +87,28 @@
         .table tr:not(.monthName):not(.dayDateCourseInstructor):hover{
             background-color: #e9eb2e;
         }
-        tbody tr{
+        tbody tr:not(.monthName):not(.dayDateCourseInstructor){
             @media(max-width: 600px){
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: wrap;            
             }
         }
+
+        tbody td:nth-child(1){
+            @media(max-width: 600px){
+                font-weight: bold;
+            }
+        }
+
         tbody td{
             @media(max-width: 600px){
                 display: block;
                 width: 100%;
+                border-top: none;
+                padding: .35rem;
             }
         }
-        tbody .dayDateCourseInstructor, .monthName{
+        tbody .dayDateCourseInstructor{
             @media(max-width: 600px){
                 display: none;   
             }
@@ -99,14 +117,19 @@
     }
 
     //Grid View
-    // .calendarView{
-    //     display: none;
-    // }
+    .calendarView{
+        margin: 0;
+    }
 
     #calendarView h4{
         color: #2e5ec0;
         font-weight: bold;
-        text-align: center;
+        text-align: center;  
+
+        @media(max-width: 600px){
+            font-size: 18px; 
+
+        }
     }
 
     .weekendsGridContainer{
@@ -118,7 +141,7 @@
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: .1vw;
-            margin: 0 10px;
+            // margin: 0 10px;
         }
     
         .weekdays{
@@ -152,7 +175,7 @@
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: .2vw;
-            margin: 0 10px;
+            // margin: 0 10px;
 
             //font-size: .8em;
             @media (max-width: 1200px){
