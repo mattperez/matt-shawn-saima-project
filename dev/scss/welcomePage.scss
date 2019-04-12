@@ -4,9 +4,9 @@
 
     .pageHeading{
         color: #50b490;
+        text-align: center;
         padding-bottom: 10px;
         font-weight: bold;
-        text-align: center;
     }
 
     .welcomePage-image > img{
@@ -24,15 +24,11 @@
         font-weight: bold;
         border: 3px solid #f1f1f1;
         position: absolute;
-        // top: 90%;
-        // visibility: visible;
         left: 50%;
-        //transform: translate(-50%, -50%);
         z-index: 3;
         width: 60%;
         padding: 20px;
         text-align: center;
-        //overflow:hidden;
         animation: 1s ease-in 0s 1 slideInFromBottom forwards;
 
         @media(max-width: 600px){
@@ -53,14 +49,6 @@
           top:60%;
         }
       }
-      
-    //   header {  
-    //     /* This section calls the slideInFromLeft animation we defined above */
-    //     animation: 1s ease-out 0s 1 slideInFromLeft;
-        
-    //     background: #333;
-    //     padding: 30px;
-    //   }
     
     #navbarContent{
         position: absolute;
