@@ -1,13 +1,12 @@
+@import "_variables.scss";
+
 .wrapper{
 
     .wrapperBody{ 
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-bottom: 20px;
-
+        
         .table .thead{
             background: #50b490;
-            @media (max-width: 480px){
+            @media (max-width: $phone-wide){
                 display: none;
             }
         }
@@ -24,13 +23,13 @@
             
         }
         .tableBody tr {
-            @media (max-width: 480px){
+            @media (max-width: $phone-wide){
                 display: flex;
                 flex-wrap: wrap;
             }
         }
         .tableBody td {
-            @media (max-width: 480px){
+            @media (max-width: $phone-wide){
                 width:100%;
             }
         }
