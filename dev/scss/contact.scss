@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .wrapper{
 
     .wrapperBody{
@@ -16,6 +18,10 @@
         .row{
             margin-top: 20px;
             margin-bottom: 20px;
+
+            .col-lg-6{
+                margin-bottom: 20px; 
+            }
 
             .card-body{
                 height: 242px;

@@ -1,4 +1,6 @@
 // Main Nav Styles
+@import "_variables.scss";
+
 header{
     width: 100%;
     nav {
@@ -39,7 +41,7 @@ header{
         a:hover:not(.icon){
           border-top: 4px solid #50b490;
 
-          @media(max-width: 600px){
+          @media(max-width: $phone-wide){
             border-top: none;
             border-bottom: 4px solid #50b490;         
           }
@@ -97,7 +99,6 @@ header{
           }
         }
       }
-    
     }
 }
 

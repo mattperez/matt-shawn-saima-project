@@ -3,27 +3,13 @@
 // Site Colours
 
 // BG Colours
-// $bg-body-color: none;
 $bg-wrapper-color: white;
-// $bg-nav-hover-color: #f8f9fa;
-// $bg-footer-color: #cdd4db;
 
-// // Text Colours
-// $text-color-dark: black;
-// $text-color-med: #454545;
-// $text-color-light: white;
-// $text-color-footer: #373d45;
-// $text-color-footer-nav-hover: #4777b7; 
-
-// // Site Colours
-// $site-highlight-color: #de0214;
+// Site Colours
 $site-stars-color: #ffde00;
 $site-stars-base-color: #cac8c8;
 
-// // Border Colours
-// $footer-border-color: #b2bcc7;
-
-// // Layout Variables
+//Layout Variables
 $site-width: 1920px;
 $padding: rem(30);
 $gutter: 2; // essentially 2%
@@ -31,17 +17,15 @@ $gutter: 2; // essentially 2%
 // $header-height-mobile: 54px;
 $header-font-size: 30px;
 
-// // Columns
+// Columns
 $one-col: 100%;
 $two-col: col-width(2);
 
-// // Utility variables
+// Utility variables
 $link-hover-selector: '&:hover, &:focus, &:active';
 
-// // Breakpoints
+// Breakpoints
 // $tablet-landscape: em(1024);
 $tablet-landscape-medium: em(860);
-// $tablet-portait: em(768);
-// $tablet-portrait-medium: em(720);
-$phone-wide: em(580);
+$phone-wide: 600px;
 $phone: em(480);
