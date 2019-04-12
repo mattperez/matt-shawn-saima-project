@@ -9,13 +9,11 @@
   <link rel="stylesheet" href="../styles/schedulePage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../scripts/script.js"></script>
-  <script defer="defer">
+  <script>
       $(function(){
           var filename = "./header.html"
           $("#navbarContent").load(filename);
-      });
 
-      $(function(){
           var filename = "./scheduleListView.html"
           $("#scheduleListView").load(filename);
       });
@@ -27,11 +25,9 @@
     <div id="navbarContent"></div>
     <br>
     <div class="scheduleWrapper">   
-      <!-- <h5 class="pageHeading">SCHEDULE</h5>  -->
       <button id="scheduleButton" type="button" class="btn" onclick="toggleListView()">Calendar View</button>
       <div id= "scheduleListView"></div>
       <div id="scheduleGridView"></div> 
-<<<<<<< HEAD
     </div>  
     </div>
       <div id="footerContent" style="margin-top:-15px;"></div>
@@ -42,19 +38,5 @@
           });
         </script>
       </div>
-=======
-
-    </div>  
-  </div>
-
-  <div id="footerContent" style="margin-top:-15px;"></div>
-  <script>
-    $(function(){
-        var filename = "./footer.html"
-        $("#footerContent").load(filename);
-    });
-  </script>
-  </div>
->>>>>>> master
   </body>
 </html>
