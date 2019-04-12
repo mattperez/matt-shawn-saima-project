@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .wrapper{
     background: white;
 
@@ -5,7 +7,7 @@
          margin-left: 15px;
          margin-right: 15px;
 
-         @media (max-width: 580px){
+         @media (max-width: $phone-wide){
             display: block;
          }
         
@@ -14,6 +16,10 @@
             color: white;
             font-weight: bold;
             margin-bottom: 5px;
+
+            @media (max-width: $phone-wide){
+                margin-bottom: 20px;
+             }
         }
 
         //Dropdown
@@ -22,6 +28,10 @@
         display: inline-block;
         margin-top: -40px;
         margin-bottom: 15px;
+
+        @media (max-width: $phone-wide){
+            margin-top: -58px;
+            }
         }
 
         .monthNameDropdown .btn-success{
@@ -68,6 +78,7 @@
             padding: 10px 0;
             background: #50b490;
             text-align: center;
+            color: white;
         }
         
         .table .dayDateCourseInstructor{
@@ -76,22 +87,31 @@
             font-weight: bold;
         }
         .table tr:not(.monthName):not(.dayDateCourseInstructor):hover{
-            background-color: #e9eb2e;
+            background-color: lavender;
         }
-        tbody tr{
-            @media(max-width: 600px){
+        tbody tr:not(.monthName):not(.dayDateCourseInstructor){
+            @media(max-width: $phone-wide){
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: wrap;            
             }
         }
+
+        tbody td:nth-child(1){
+            @media(max-width: $phone-wide){
+                font-weight: bold;
+            }
+        }
+
         tbody td{
-            @media(max-width: 600px){
+            @media(max-width: $phone-wide){
                 display: block;
                 width: 100%;
+                border-top: none;
+                padding: .35rem;
             }
         }
-        tbody .dayDateCourseInstructor, .monthName{
-            @media(max-width: 600px){
+        tbody .dayDateCourseInstructor{
+            @media(max-width: $phone-wide){
                 display: none;   
             }
         }
@@ -99,26 +119,27 @@
     }
 
     //Grid View
-    // .calendarView{
-    //     display: none;
-    // }
+    .calendarView{
+        margin: 0;
+    }
 
     #calendarView h4{
         color: #2e5ec0;
         font-weight: bold;
-        text-align: center;
+        text-align: center;  
+
+        @media(max-width: $phone-wide){
+            font-size: 18px; 
+
+        }
     }
 
     .weekendsGridContainer{
-        //display: grid;
-        //grid-template-columns: 1fr repeat(2 , minmax(auto, 540px)) 1fr;
 
         .weekendsGridContent{
-            //grid-column: 1/5;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: .1vw;
-            margin: 0 10px;
         }
     
         .weekdays{
@@ -129,9 +150,6 @@
             color: white;
             background-color: #50b490;
             font-weight: bold;
-
-            //width: 210px;
-            //margin: 1%;
         }
 
         @media (max-width: 900px){
@@ -144,17 +162,11 @@
     }
 
     .coursesGridContainer{
-        //display: grid;
-        //grid-template-columns: 1fr repeat(2 , minmax(auto, 540px)) 1fr;
 
         .coursesGridContent{
-            //grid-column: 1/5;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: .2vw;
-            margin: 0 10px;
-
-            //font-size: .8em;
             @media (max-width: 1200px){
                 display: block;
                 .emptyDay{
@@ -165,11 +177,9 @@
         }
     
         .coursesGridContent div{
-            border: 2px solid #ddd;
+            border: 1px solid #ddd;
             padding: 20px;
-            //width: 234px;
             height:156px;
-            //margin: 1%;
             @media (max-width: 1200px){
                 height: auto;
             }

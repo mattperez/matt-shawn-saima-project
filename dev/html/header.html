@@ -6,14 +6,13 @@
 	
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE. DO NOT PUT THEM INSIDE THE build:css comments -->
 	<!-- Put Google Fonts Here -->
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- end Google Fonts -->
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT THREE LINES OF CODE - THEY ARE IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THESE LINES -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 	<!-- endbuild -->
 </head>
 <body>
@@ -28,6 +27,7 @@
                 <p class="webProgrammer">Web Programmer Option</p>
             </div>
         </div>
+    
         <nav>
             <div class="topnav" id="myTopnav">
                 <a class="nav-link" href="./course-summary-page.html">COURSES</a>
@@ -39,6 +39,7 @@
                 <a class="nav-link" href="./contact-page.html">CONTACT</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
                 </a>
             </div>
         </nav> 
@@ -51,14 +52,12 @@ place the script tags between the build:js comment tags -->
 <!-- <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/script.js"></script> -->
 <!-- endbuild -->	
+
 <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+    var topNavBar = document.getElementById("myTopnav");
+
+    function myFunction(){
+    topNavBar.classList.toggle('responsive');
     }
 </script>
 </body>

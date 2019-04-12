@@ -1,4 +1,6 @@
 // Main Nav Styles
+@import "_variables.scss";
+
 header{
     width: 100%;
     nav {
@@ -6,7 +8,6 @@ header{
            width: 100%;
            background: #FD9A28;
            height: 35px;
-        //    margin: 0 auto;
         
         .topnav{
         @include flatten;
@@ -28,142 +29,76 @@ header{
             font-size: 1.2em;
             text-decoration: none;
             outline: none;
-            padding: 7px 20px;
+            padding: 4px 20px;
             font-weight: bold;
             z-index: 4;
-
-            #{$link-hover-selector} {
-                border-top: 4px solid #50b490;
-            }
     
             @at-root nav li:last-child a {
                 border-right: none;
             }
-        }    
+        }
 
+        a:hover:not(.icon){
+          border-top: 4px solid #50b490;
 
-        
-    
-        // height: $height;
-        // border-top: $border;
-    
-        // ul {
-        //     @include flatten;
-        //     list-style: none;
-        //     display: flex;
-        // }
-    
-        // a {
-        //     display: block;
-        //     color: $text-color-dark;
-        //     border-right: $border;
-        //     line-height: $height;
-        //     text-align: center;
-        //     font-size: 1.2em;
-        //     text-decoration: none;
-        //     outline: none;
-        //     padding: $padding;
-            
-        //     #{$link-hover-selector} {
-        //         border-bottom: 10px solid plum;
-        //     }
-    
-        //     @at-root nav li:last-child a {
-        //         border-right: none;
-        //     }
-    
-        // }
-
-        // @include mq($tablet-landscape) {
-        //     // height: auto;
-        //     // border-top: none;
-            
-        //     // a {
-        //     //     line-height: 50px;
-        //     //     border-right: none;
-        //     //     border-top: $border;
-        //     //     font-size: 1em;
-        //     //     padding: rem(20);
-        //     //     padding-bottom: 0px;
-
-        //     //     #{$link-hover-selector} {
-        //     //         border-bottom: 30px solid plum;
-        //     //     }
-        //     // }
-
-        //     // #myTopnav {
-        //     //     margin-top: 25%; }
-
-        //     // nav{
-
-        //     // }
-
-        //     .topnav > .icon {
-        //         float: right;
-        //         visibility: visible;
-        //         display: block;
-        //         right: 0;
-        //     }  
-
-        //     .topnav a:not(:first-child){
-        //         display: none;
-        //         float: left;
-        //     }
-
-        //     .topnav.responsive {position: relative;}
-        //     .topnav.responsive .icon {
-        //       position: absolute;
-        //       right: 0;
-        //       top: 0;
-        //     }
-        //     .topnav.responsive a {
-        //       float: none;
-        //       display: block;
-        //       visibility: visible;
-        //       text-align: left;
-        //     }
-    
-        // }
-
-        @media screen and (max-width: 1024px) {
-
-            
-            .topnav a {display: none;}
-            .topnav a.icon {
-              float: right;
-              margin-right: 0;
-              display: block;
-              visibility: visible;
-            }
-
-            .topnav.responsive {position: relative;}
-            .topnav.responsive .icon {
-              position: absolute;
-              right: 0;
-              top: 0;
-            }
-
-            .topnav{
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-
-                .icon{
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                }
-            }
-
-            .topnav.responsive a:not(:last-child) {              
-              visibility: visible;
-              display: block;
-              justify-content: flex-start;
-              background: #FD9A28;
-              width: 100%;
-              margin: 0;
-            }
+          @media(max-width: $phone-wide){
+            border-top: none;
+            border-bottom: 4px solid #50b490;         
           }
-    
+        }
+        
+        .fa-times{
+          font-size: 25px;
+          visibility: hidden;
+        }
+
+    @media screen and (max-width: 1024px) {
+        .topnav a {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+          visibility: visible;
+          text-decoration: none;
+        }
+
+        .topnav{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .icon{
+                justify-content: flex-end;
+                align-items: flex-end;                  
+            }
+        }
+
+        .responsive {position: relative;}
+
+        .responsive a:not(:last-child) {              
+          visibility: visible;
+          display: block;
+          justify-content: flex-start;
+          background: #FD9A28;
+          width: 100%;
+          margin: 0;
+        }
+
+        .responsive {
+          .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .fa-times{
+            visibility: visible;
+            display: block;
+            padding-top: 0;
+          }
+          .fa-bars{
+            display: none;
+          }
+        }
+      }
     }
 }
 

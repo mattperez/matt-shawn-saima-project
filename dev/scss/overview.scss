@@ -1,16 +1,19 @@
 .wrapper{
 
-    .overviewWrapper{
-        //margin-top: 13%;  
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-bottom: 30px;
+    .wrapperBody{
 
-        .pageHeading{
-            color: #50b490;
-            text-align: center;
-            padding-bottom: 10px;
-            font-weight: bold;
+        .generalInfo{
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width: 1050px){
+                flex-direction: column;
+
+            }
+
+            p{
+                border-right: 10px solid white;
+            }
         }
 
         .infoHeading{

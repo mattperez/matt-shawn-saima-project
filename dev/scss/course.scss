@@ -1,28 +1,34 @@
+@import "_variables.scss";
+
 .wrapper{
     background: white;
 
-    #container{
-        //margin-top: 13%;   
-
-        .courseSummeries{
-
-            .pageHeading{
-                color: #50b490;
-                text-align: center;
-                padding-bottom: 10px;
-                font-weight: bold;
-            }
-        }
+    .wrapperBody{
    
         .row{
             margin-bottom: 15px;
             border: 5px solid white;
-            margin-left: 15px;
-            margin-right: 15px;
         }
 
         .col-lg-4{
             margin: 10px 0px;
+        }
+
+        .card-body{
+            height: 360px;
+            padding: 5px;
+
+            @media (max-width: 1160px){
+                overflow-y: scroll;
+            }
+            
+            @media (max-width: 970px){
+                overflow: hidden;
+            } 
+
+            @media (max-width: $phone-wide){
+                overflow-y: scroll;
+            }         
         }
     
         .card-title{
