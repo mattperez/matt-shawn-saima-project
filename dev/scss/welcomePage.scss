@@ -34,6 +34,12 @@
         text-align: center;
         //overflow:hidden;
         animation: 1s ease-in 0s 1 slideInFromBottom forwards;
+
+        @media(max-width: 600px){
+            h3{
+                font-size: 20px;      
+            }          
+          }
     }
 
     @keyframes slideInFromBottom {
