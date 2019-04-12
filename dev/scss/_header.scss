@@ -3,10 +3,8 @@ header {
     .logoWithDescription{
         display: flex;
         background: #2e5ec0;
-        // width: 100%;
         height: 99px;
         z-index: 2;
-        // margin: 0 auto;
 
         @media (max-width: 450px){
             height: 99px;
