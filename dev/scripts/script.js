@@ -13,6 +13,7 @@ function toggleListView(){
   }else {
       list.style.display="none";
       btn.innerText="List View";  
+      grid.style.display = "";
       monthName.style.display="none";
   }
   
