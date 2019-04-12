@@ -110,7 +110,7 @@
                 padding: .35rem;
             }
         }
-        tbody .dayDateCourseInstructor{
+        tbody .dayDateCourseInstructor, .blankDay{
             @media(max-width: $phone-wide){
                 display: none;   
             }
